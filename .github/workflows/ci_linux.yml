@@ -53,7 +53,7 @@ jobs:
         if: github.ref_type == 'tag'
         run: |
           REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
-          echo "${REPO_NAME1} - {REPO_NAME2}"
+          echo "${REPO_NAME1} - ${REPO_NAME2}"
           tar -czvf ${REPO_NAME2}-${{ github.ref_name }}.tar.gz -C build/install2 .
 
       - name: Release
