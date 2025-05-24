@@ -40,8 +40,8 @@ jobs:
 
       - name: Create artifact
         run: |
-          mkdir -p temp/artifact
-          cp -r build/install2/* temp/artifact
+          mkdir -p temp/artifact/${{ github.ref_name }}
+          cp -r build/install2/* temp/artifact/${{ github.ref_name }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -54,7 +54,7 @@ jobs:
         run: |
           REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
           echo "${REPO_NAME1} - ${REPO_NAME2}"
-          tar -czvf ${REPO_NAME2}-${{ github.ref_name }}.tar.gz -C build/install2 .
+          tar -czvf ${REPO_NAME2}-${{ github.ref_name }}.tar.gz -C temp/artifact .
 
       - name: Release
         uses: softprops/action-gh-release@v2
