@@ -42,7 +42,7 @@ jobs:
 
       - name: Create artifact
         run: |
-          mkdir -p ${{ env.ARTIFACT_DIR }} && cp -rv build/install2/* ${{ env.ARTIFACT_DIR }}
+          mkdir -p ${ARTIFACT_DIR} && cp -rv build/install2/* ${ARTIFACT_DIR}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -55,9 +55,9 @@ jobs:
         run: |
           REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
           ARTIFACT_FILENAME2=${REPO_NAME2}-${{ github.ref_name }}.tar.gz
-          echo "${REPO_NAME1} - ${REPO_NAME2}, ${ARTIFACT_FILENAME1} - ${ARTIFACT_FILENAME2}"
-          
-          tar -czvf ${ARTIFACT_FILENAME2} -C "$(dirname "${{ env.ARTIFACT_DIR }}")" .
+          echo "${REPO_NAME1}|${REPO_NAME2}, ${ARTIFACT_FILENAME1}|${ARTIFACT_FILENAME2}"
+
+          tar -czvf ${ARTIFACT_FILENAME2} -C "$(dirname "${ARTIFACT_DIR}")" .
 
       - name: Release
         uses: softprops/action-gh-release@v2
