@@ -15,6 +15,8 @@ jobs:
       - name: Set ENV variables
         run: |
           echo "REPO_NAME1=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
+          echo "ARTIFACT_FILENAME1=${{ env.REPO_NAME1 }}-${{ github.ref_name }}.tar.gz" >> $GITHUB_ENV
+          echo "ARTIFACT_DIR=temp/artifact/${{ env.REPO_NAME1 }}-${{ github.ref_name }}" >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -40,8 +42,7 @@ jobs:
 
       - name: Create artifact
         run: |
-          ARTIFACT_DIR=temp/artifact/${{ github.ref_name }}
-          mkdir -p ${ARTIFACT_DIR} && cp -rv build/install2/* ${ARTIFACT_DIR}
+          mkdir -p ${{ env.ARTIFACT_DIR }} && cp -rv build/install2/* ${{ env.ARTIFACT_DIR }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -53,12 +54,14 @@ jobs:
         if: github.ref_type == 'tag'
         run: |
           REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
-          echo "${REPO_NAME1} - ${REPO_NAME2}"
-          tar -czvf ${REPO_NAME2}-${{ github.ref_name }}.tar.gz -C "$(dirname "${ARTIFACT_DIR}")" .
+          ARTIFACT_FILENAME2=${REPO_NAME2}-${{ github.ref_name }}.tar.gz
+          echo "${REPO_NAME1} - ${REPO_NAME2}, ${ARTIFACT_FILENAME1} - ${ARTIFACT_FILENAME2}"
+          
+          tar -czvf ${ARTIFACT_FILENAME2} -C "$(dirname "${{ env.ARTIFACT_DIR }}")" .
 
       - name: Release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
           files: |
-            ${{ env.REPO_NAME1 }}-${{ github.ref_name }}.tar.gz
+            ${{ env.ARTIFACT_FILENAME1 }}
