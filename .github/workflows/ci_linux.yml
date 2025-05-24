@@ -12,9 +12,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set ENV variables
+      - name: Set environment variables
         run: |
           echo "REPO_NAME1=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
+          
+      - name: Set environment variables
           echo "ARTIFACT_FILENAME1=${REPO_NAME1}-${{ github.ref_name }}.tar.gz" >> $GITHUB_ENV
           echo "ARTIFACT_DIR=temp/artifact/${REPO_NAME1}-${{ github.ref_name }}" >> $GITHUB_ENV
 
