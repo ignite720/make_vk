@@ -61,4 +61,4 @@ jobs:
         if: github.ref_type == 'tag'
         with:
           files: |
-            "${REPO_NAME1}-${{ github.ref_name }}.tar.gz"
+            "${{ env.REPO_NAME1 }}-${{ github.ref_name }}.tar.gz"
