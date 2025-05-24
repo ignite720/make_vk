@@ -15,8 +15,8 @@ jobs:
       - name: Set ENV variables
         run: |
           echo "REPO_NAME1=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
-          echo "ARTIFACT_FILENAME1=${{ env.REPO_NAME1 }}-${{ github.ref_name }}.tar.gz" >> $GITHUB_ENV
-          echo "ARTIFACT_DIR=temp/artifact/${{ env.REPO_NAME1 }}-${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "ARTIFACT_FILENAME1=${REPO_NAME1}-${{ github.ref_name }}.tar.gz" >> $GITHUB_ENV
+          echo "ARTIFACT_DIR=temp/artifact/${REPO_NAME1}-${{ github.ref_name }}" >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v4
