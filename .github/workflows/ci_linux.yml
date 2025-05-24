@@ -1,0 +1,65 @@
+name: CI linux
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set ENV variables
+        run: |
+          echo "REPO_NAME1=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+
+      - name: Read version file
+        id: version
+        run: echo "VERSION=$(cat version | tr -d \"\n\")" >> $GITHUB_OUTPUT
+
+      - name: Install Vulkan SDK
+        uses: humbletim/install-vulkan-sdk@v1.2
+        with:
+          version: ${{ steps.version.outputs.VERSION }}
+          cache: true
+
+      - name: Build
+        run: |
+          make install ARGV="-DMAKE_VK_USE_CATCH2=ON"
+
+      - name: Apply automatic changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+
+      - name: Create artifact
+        run: |
+          mkdir -p temp/artifact
+          cp -r build/install2/* temp/artifact
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Release-Artifact
+          path: ${{ github.workspace }}/temp
+
+      - name: Package Artifacts
+        if: github.ref_type == 'tag'
+        run: |
+          REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
+          tar -czvf ${REPO_NAME2}-${{ github.ref_name }}.tar.gz -C build/install2 .
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            ${REPO_NAME1}-${{ github.ref_name }}.tar.gz
