@@ -16,7 +16,7 @@ static void s_test1() {
 #endif
 
 TEST_CASE("Test case 0") {
-    REQUIRE(MAKE_VK_VERSION == "1.4.309.0");
+    REQUIRE(MAKE_VK_VERSION == "1.4.313.0");
 }
 
 TEST_CASE("Test case 1") {
@@ -2138,3366 +2138,3468 @@ TEST_CASE("Test case 353") {
 }
 
 TEST_CASE("Test case 354") {
+    VkPhysicalDeviceShaderBfloat16FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR();
+    CHECK(offsetof(VkPhysicalDeviceShaderBfloat16FeaturesKHR, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR);
+}
+
+TEST_CASE("Test case 355") {
     VkPhysicalDeviceShaderClockFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceShaderClockFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 355") {
+TEST_CASE("Test case 356") {
     VkVideoDecodeH265ProfileInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_PROFILE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265ProfileInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_PROFILE_INFO_KHR);
 }
 
-TEST_CASE("Test case 356") {
+TEST_CASE("Test case 357") {
     VkVideoDecodeH265CapabilitiesKHR tmp = MAKE_VK_VIDEO_DECODE_H265_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoDecodeH265CapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 357") {
+TEST_CASE("Test case 358") {
     VkVideoDecodeH265SessionParametersAddInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_SESSION_PARAMETERS_ADD_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265SessionParametersAddInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_SESSION_PARAMETERS_ADD_INFO_KHR);
 }
 
-TEST_CASE("Test case 358") {
+TEST_CASE("Test case 359") {
     VkVideoDecodeH265SessionParametersCreateInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_SESSION_PARAMETERS_CREATE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265SessionParametersCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_SESSION_PARAMETERS_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 359") {
+TEST_CASE("Test case 360") {
     VkVideoDecodeH265PictureInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_PICTURE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265PictureInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_PICTURE_INFO_KHR);
 }
 
-TEST_CASE("Test case 360") {
+TEST_CASE("Test case 361") {
     VkVideoDecodeH265DpbSlotInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_DPB_SLOT_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265DpbSlotInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_DPB_SLOT_INFO_KHR);
 }
 
-TEST_CASE("Test case 361") {
+TEST_CASE("Test case 362") {
     VkFragmentShadingRateAttachmentInfoKHR tmp = MAKE_VK_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR();
     CHECK(offsetof(VkFragmentShadingRateAttachmentInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR);
 }
 
-TEST_CASE("Test case 362") {
+TEST_CASE("Test case 363") {
     VkPipelineFragmentShadingRateStateCreateInfoKHR tmp = MAKE_VK_PIPELINE_FRAGMENT_SHADING_RATE_STATE_CREATE_INFO_KHR();
     CHECK(offsetof(VkPipelineFragmentShadingRateStateCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_FRAGMENT_SHADING_RATE_STATE_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 363") {
+TEST_CASE("Test case 364") {
     VkPhysicalDeviceFragmentShadingRateFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceFragmentShadingRateFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 364") {
+TEST_CASE("Test case 365") {
     VkPhysicalDeviceFragmentShadingRatePropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceFragmentShadingRatePropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 365") {
+TEST_CASE("Test case 366") {
     VkPhysicalDeviceFragmentShadingRateKHR tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_KHR();
     CHECK(offsetof(VkPhysicalDeviceFragmentShadingRateKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_KHR);
 }
 
-TEST_CASE("Test case 366") {
+TEST_CASE("Test case 367") {
     VkRenderingFragmentShadingRateAttachmentInfoKHR tmp = MAKE_VK_RENDERING_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR();
     CHECK(offsetof(VkRenderingFragmentShadingRateAttachmentInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDERING_FRAGMENT_SHADING_RATE_ATTACHMENT_INFO_KHR);
 }
 
-TEST_CASE("Test case 367") {
+TEST_CASE("Test case 368") {
     VkPhysicalDeviceShaderQuadControlFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_QUAD_CONTROL_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceShaderQuadControlFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_QUAD_CONTROL_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 368") {
+TEST_CASE("Test case 369") {
     VkSurfaceProtectedCapabilitiesKHR tmp = MAKE_VK_SURFACE_PROTECTED_CAPABILITIES_KHR();
     CHECK(offsetof(VkSurfaceProtectedCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_PROTECTED_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 369") {
+TEST_CASE("Test case 370") {
     VkPhysicalDevicePresentWaitFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_PRESENT_WAIT_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDevicePresentWaitFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_WAIT_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 370") {
+TEST_CASE("Test case 371") {
     VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_EXECUTABLE_PROPERTIES_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_EXECUTABLE_PROPERTIES_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 371") {
+TEST_CASE("Test case 372") {
     VkPipelineInfoKHR tmp = MAKE_VK_PIPELINE_INFO_KHR();
     CHECK(offsetof(VkPipelineInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_INFO_KHR);
 }
 
-TEST_CASE("Test case 372") {
+TEST_CASE("Test case 373") {
     VkPipelineExecutablePropertiesKHR tmp = MAKE_VK_PIPELINE_EXECUTABLE_PROPERTIES_KHR();
     CHECK(offsetof(VkPipelineExecutablePropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 373") {
+TEST_CASE("Test case 374") {
     VkPipelineExecutableInfoKHR tmp = MAKE_VK_PIPELINE_EXECUTABLE_INFO_KHR();
     CHECK(offsetof(VkPipelineExecutableInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INFO_KHR);
 }
 
-TEST_CASE("Test case 374") {
+TEST_CASE("Test case 375") {
     VkPipelineExecutableStatisticKHR tmp = MAKE_VK_PIPELINE_EXECUTABLE_STATISTIC_KHR();
     CHECK(offsetof(VkPipelineExecutableStatisticKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_STATISTIC_KHR);
 }
 
-TEST_CASE("Test case 375") {
+TEST_CASE("Test case 376") {
     VkPipelineExecutableInternalRepresentationKHR tmp = MAKE_VK_PIPELINE_EXECUTABLE_INTERNAL_REPRESENTATION_KHR();
     CHECK(offsetof(VkPipelineExecutableInternalRepresentationKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_EXECUTABLE_INTERNAL_REPRESENTATION_KHR);
 }
 
-TEST_CASE("Test case 376") {
+TEST_CASE("Test case 377") {
     VkPipelineLibraryCreateInfoKHR tmp = MAKE_VK_PIPELINE_LIBRARY_CREATE_INFO_KHR();
     CHECK(offsetof(VkPipelineLibraryCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_LIBRARY_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 377") {
+TEST_CASE("Test case 378") {
     VkPresentIdKHR tmp = MAKE_VK_PRESENT_ID_KHR();
     CHECK(offsetof(VkPresentIdKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PRESENT_ID_KHR);
 }
 
-TEST_CASE("Test case 378") {
+TEST_CASE("Test case 379") {
     VkPhysicalDevicePresentIdFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_PRESENT_ID_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDevicePresentIdFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_ID_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 379") {
+TEST_CASE("Test case 380") {
     VkVideoEncodeInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_INFO_KHR);
 }
 
-TEST_CASE("Test case 380") {
+TEST_CASE("Test case 381") {
     VkVideoEncodeCapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 381") {
+TEST_CASE("Test case 382") {
     VkQueryPoolVideoEncodeFeedbackCreateInfoKHR tmp = MAKE_VK_QUERY_POOL_VIDEO_ENCODE_FEEDBACK_CREATE_INFO_KHR();
     CHECK(offsetof(VkQueryPoolVideoEncodeFeedbackCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_QUERY_POOL_VIDEO_ENCODE_FEEDBACK_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 382") {
+TEST_CASE("Test case 383") {
     VkVideoEncodeUsageInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_USAGE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeUsageInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_USAGE_INFO_KHR);
 }
 
-TEST_CASE("Test case 383") {
+TEST_CASE("Test case 384") {
     VkVideoEncodeRateControlLayerInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_RATE_CONTROL_LAYER_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeRateControlLayerInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_RATE_CONTROL_LAYER_INFO_KHR);
 }
 
-TEST_CASE("Test case 384") {
+TEST_CASE("Test case 385") {
     VkVideoEncodeRateControlInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_RATE_CONTROL_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeRateControlInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_RATE_CONTROL_INFO_KHR);
 }
 
-TEST_CASE("Test case 385") {
+TEST_CASE("Test case 386") {
     VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR tmp = MAKE_VK_PHYSICAL_DEVICE_VIDEO_ENCODE_QUALITY_LEVEL_INFO_KHR();
     CHECK(offsetof(VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VIDEO_ENCODE_QUALITY_LEVEL_INFO_KHR);
 }
 
-TEST_CASE("Test case 386") {
+TEST_CASE("Test case 387") {
     VkVideoEncodeQualityLevelPropertiesKHR tmp = MAKE_VK_VIDEO_ENCODE_QUALITY_LEVEL_PROPERTIES_KHR();
     CHECK(offsetof(VkVideoEncodeQualityLevelPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_QUALITY_LEVEL_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 387") {
+TEST_CASE("Test case 388") {
     VkVideoEncodeQualityLevelInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_QUALITY_LEVEL_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeQualityLevelInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_QUALITY_LEVEL_INFO_KHR);
 }
 
-TEST_CASE("Test case 388") {
+TEST_CASE("Test case 389") {
     VkVideoEncodeSessionParametersGetInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_SESSION_PARAMETERS_GET_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeSessionParametersGetInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_SESSION_PARAMETERS_GET_INFO_KHR);
 }
 
-TEST_CASE("Test case 389") {
+TEST_CASE("Test case 390") {
     VkVideoEncodeSessionParametersFeedbackInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_SESSION_PARAMETERS_FEEDBACK_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeSessionParametersFeedbackInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_SESSION_PARAMETERS_FEEDBACK_INFO_KHR);
 }
 
-TEST_CASE("Test case 390") {
+TEST_CASE("Test case 391") {
     VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADER_BARYCENTRIC_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADER_BARYCENTRIC_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 391") {
+TEST_CASE("Test case 392") {
     VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADER_BARYCENTRIC_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADER_BARYCENTRIC_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 392") {
+TEST_CASE("Test case 393") {
     VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_SUBGROUP_UNIFORM_CONTROL_FLOW_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SUBGROUP_UNIFORM_CONTROL_FLOW_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 393") {
+TEST_CASE("Test case 394") {
     VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_WORKGROUP_MEMORY_EXPLICIT_LAYOUT_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_WORKGROUP_MEMORY_EXPLICIT_LAYOUT_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 394") {
+TEST_CASE("Test case 395") {
     VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_MAINTENANCE_1_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_MAINTENANCE_1_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 395") {
+TEST_CASE("Test case 396") {
     VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_MAXIMAL_RECONVERGENCE_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_MAXIMAL_RECONVERGENCE_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 396") {
+TEST_CASE("Test case 397") {
     VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_POSITION_FETCH_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_POSITION_FETCH_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 397") {
+TEST_CASE("Test case 398") {
     VkPhysicalDevicePipelineBinaryFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_BINARY_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDevicePipelineBinaryFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_BINARY_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 398") {
+TEST_CASE("Test case 399") {
     VkPhysicalDevicePipelineBinaryPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_BINARY_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDevicePipelineBinaryPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_BINARY_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 399") {
+TEST_CASE("Test case 400") {
     VkDevicePipelineBinaryInternalCacheControlKHR tmp = MAKE_VK_DEVICE_PIPELINE_BINARY_INTERNAL_CACHE_CONTROL_KHR();
     CHECK(offsetof(VkDevicePipelineBinaryInternalCacheControlKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_PIPELINE_BINARY_INTERNAL_CACHE_CONTROL_KHR);
 }
 
-TEST_CASE("Test case 400") {
+TEST_CASE("Test case 401") {
     VkPipelineBinaryKeyKHR tmp = MAKE_VK_PIPELINE_BINARY_KEY_KHR();
     CHECK(offsetof(VkPipelineBinaryKeyKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_BINARY_KEY_KHR);
 }
 
-TEST_CASE("Test case 401") {
+TEST_CASE("Test case 402") {
     VkPipelineCreateInfoKHR tmp = MAKE_VK_PIPELINE_CREATE_INFO_KHR();
     CHECK(offsetof(VkPipelineCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 402") {
+TEST_CASE("Test case 403") {
     VkPipelineBinaryCreateInfoKHR tmp = MAKE_VK_PIPELINE_BINARY_CREATE_INFO_KHR();
     CHECK(offsetof(VkPipelineBinaryCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_BINARY_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 403") {
+TEST_CASE("Test case 404") {
     VkPipelineBinaryInfoKHR tmp = MAKE_VK_PIPELINE_BINARY_INFO_KHR();
     CHECK(offsetof(VkPipelineBinaryInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_BINARY_INFO_KHR);
 }
 
-TEST_CASE("Test case 404") {
+TEST_CASE("Test case 405") {
     VkReleaseCapturedPipelineDataInfoKHR tmp = MAKE_VK_RELEASE_CAPTURED_PIPELINE_DATA_INFO_KHR();
     CHECK(offsetof(VkReleaseCapturedPipelineDataInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RELEASE_CAPTURED_PIPELINE_DATA_INFO_KHR);
 }
 
-TEST_CASE("Test case 405") {
+TEST_CASE("Test case 406") {
     VkPipelineBinaryDataInfoKHR tmp = MAKE_VK_PIPELINE_BINARY_DATA_INFO_KHR();
     CHECK(offsetof(VkPipelineBinaryDataInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_BINARY_DATA_INFO_KHR);
 }
 
-TEST_CASE("Test case 406") {
+TEST_CASE("Test case 407") {
     VkPipelineBinaryHandlesInfoKHR tmp = MAKE_VK_PIPELINE_BINARY_HANDLES_INFO_KHR();
     CHECK(offsetof(VkPipelineBinaryHandlesInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_BINARY_HANDLES_INFO_KHR);
 }
 
-TEST_CASE("Test case 407") {
+TEST_CASE("Test case 408") {
     VkCooperativeMatrixPropertiesKHR tmp = MAKE_VK_COOPERATIVE_MATRIX_PROPERTIES_KHR();
     CHECK(offsetof(VkCooperativeMatrixPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COOPERATIVE_MATRIX_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 408") {
+TEST_CASE("Test case 409") {
     VkPhysicalDeviceCooperativeMatrixFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrixFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 409") {
+TEST_CASE("Test case 410") {
     VkPhysicalDeviceCooperativeMatrixPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrixPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 410") {
+TEST_CASE("Test case 411") {
     VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_COMPUTE_SHADER_DERIVATIVES_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMPUTE_SHADER_DERIVATIVES_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 411") {
+TEST_CASE("Test case 412") {
     VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_COMPUTE_SHADER_DERIVATIVES_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMPUTE_SHADER_DERIVATIVES_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 412") {
+TEST_CASE("Test case 413") {
     VkVideoDecodeAV1ProfileInfoKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_PROFILE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeAV1ProfileInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_PROFILE_INFO_KHR);
 }
 
-TEST_CASE("Test case 413") {
+TEST_CASE("Test case 414") {
     VkVideoDecodeAV1CapabilitiesKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoDecodeAV1CapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 414") {
+TEST_CASE("Test case 415") {
     VkVideoDecodeAV1SessionParametersCreateInfoKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_SESSION_PARAMETERS_CREATE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeAV1SessionParametersCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_SESSION_PARAMETERS_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 415") {
+TEST_CASE("Test case 416") {
     VkVideoDecodeAV1PictureInfoKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_PICTURE_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeAV1PictureInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_PICTURE_INFO_KHR);
 }
 
-TEST_CASE("Test case 416") {
+TEST_CASE("Test case 417") {
     VkVideoDecodeAV1DpbSlotInfoKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_DPB_SLOT_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeAV1DpbSlotInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_DPB_SLOT_INFO_KHR);
 }
 
-TEST_CASE("Test case 417") {
+TEST_CASE("Test case 418") {
     VkPhysicalDeviceVideoEncodeAV1FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_VIDEO_ENCODE_AV1_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceVideoEncodeAV1FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VIDEO_ENCODE_AV1_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 418") {
+TEST_CASE("Test case 419") {
     VkVideoEncodeAV1CapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeAV1CapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 419") {
+TEST_CASE("Test case 420") {
     VkVideoEncodeAV1QualityLevelPropertiesKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_QUALITY_LEVEL_PROPERTIES_KHR();
     CHECK(offsetof(VkVideoEncodeAV1QualityLevelPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_QUALITY_LEVEL_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 420") {
+TEST_CASE("Test case 421") {
     VkVideoEncodeAV1SessionCreateInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_SESSION_CREATE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1SessionCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_SESSION_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 421") {
+TEST_CASE("Test case 422") {
     VkVideoEncodeAV1SessionParametersCreateInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_SESSION_PARAMETERS_CREATE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1SessionParametersCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_SESSION_PARAMETERS_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 422") {
+TEST_CASE("Test case 423") {
     VkVideoEncodeAV1PictureInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_PICTURE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1PictureInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_PICTURE_INFO_KHR);
 }
 
-TEST_CASE("Test case 423") {
+TEST_CASE("Test case 424") {
     VkVideoEncodeAV1DpbSlotInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_DPB_SLOT_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1DpbSlotInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_DPB_SLOT_INFO_KHR);
 }
 
-TEST_CASE("Test case 424") {
+TEST_CASE("Test case 425") {
     VkVideoEncodeAV1ProfileInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_PROFILE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1ProfileInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_PROFILE_INFO_KHR);
 }
 
-TEST_CASE("Test case 425") {
+TEST_CASE("Test case 426") {
     VkVideoEncodeAV1GopRemainingFrameInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_GOP_REMAINING_FRAME_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1GopRemainingFrameInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_GOP_REMAINING_FRAME_INFO_KHR);
 }
 
-TEST_CASE("Test case 426") {
+TEST_CASE("Test case 427") {
     VkVideoEncodeAV1RateControlInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_RATE_CONTROL_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1RateControlInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_RATE_CONTROL_INFO_KHR);
 }
 
-TEST_CASE("Test case 427") {
+TEST_CASE("Test case 428") {
     VkVideoEncodeAV1RateControlLayerInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_RATE_CONTROL_LAYER_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeAV1RateControlLayerInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_RATE_CONTROL_LAYER_INFO_KHR);
 }
 
-TEST_CASE("Test case 428") {
+TEST_CASE("Test case 429") {
     VkPhysicalDeviceVideoMaintenance1FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_VIDEO_MAINTENANCE_1_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceVideoMaintenance1FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VIDEO_MAINTENANCE_1_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 429") {
+TEST_CASE("Test case 430") {
     VkVideoInlineQueryInfoKHR tmp = MAKE_VK_VIDEO_INLINE_QUERY_INFO_KHR();
     CHECK(offsetof(VkVideoInlineQueryInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_INLINE_QUERY_INFO_KHR);
 }
 
-TEST_CASE("Test case 430") {
+TEST_CASE("Test case 431") {
     VkCalibratedTimestampInfoKHR tmp = MAKE_VK_CALIBRATED_TIMESTAMP_INFO_KHR();
     CHECK(offsetof(VkCalibratedTimestampInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CALIBRATED_TIMESTAMP_INFO_KHR);
 }
 
-TEST_CASE("Test case 431") {
+TEST_CASE("Test case 432") {
     VkSetDescriptorBufferOffsetsInfoEXT tmp = MAKE_VK_SET_DESCRIPTOR_BUFFER_OFFSETS_INFO_EXT();
     CHECK(offsetof(VkSetDescriptorBufferOffsetsInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SET_DESCRIPTOR_BUFFER_OFFSETS_INFO_EXT);
 }
 
-TEST_CASE("Test case 432") {
+TEST_CASE("Test case 433") {
     VkBindDescriptorBufferEmbeddedSamplersInfoEXT tmp = MAKE_VK_BIND_DESCRIPTOR_BUFFER_EMBEDDED_SAMPLERS_INFO_EXT();
     CHECK(offsetof(VkBindDescriptorBufferEmbeddedSamplersInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BIND_DESCRIPTOR_BUFFER_EMBEDDED_SAMPLERS_INFO_EXT);
 }
 
-TEST_CASE("Test case 433") {
+TEST_CASE("Test case 434") {
     VkVideoEncodeQuantizationMapCapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_QUANTIZATION_MAP_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeQuantizationMapCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_QUANTIZATION_MAP_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 434") {
+TEST_CASE("Test case 435") {
     VkVideoFormatQuantizationMapPropertiesKHR tmp = MAKE_VK_VIDEO_FORMAT_QUANTIZATION_MAP_PROPERTIES_KHR();
     CHECK(offsetof(VkVideoFormatQuantizationMapPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_FORMAT_QUANTIZATION_MAP_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 435") {
+TEST_CASE("Test case 436") {
     VkVideoEncodeQuantizationMapInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_QUANTIZATION_MAP_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeQuantizationMapInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_QUANTIZATION_MAP_INFO_KHR);
 }
 
-TEST_CASE("Test case 436") {
+TEST_CASE("Test case 437") {
     VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR tmp = MAKE_VK_VIDEO_ENCODE_QUANTIZATION_MAP_SESSION_PARAMETERS_CREATE_INFO_KHR();
     CHECK(offsetof(VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_QUANTIZATION_MAP_SESSION_PARAMETERS_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 437") {
+TEST_CASE("Test case 438") {
     VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_VIDEO_ENCODE_QUANTIZATION_MAP_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VIDEO_ENCODE_QUANTIZATION_MAP_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 438") {
+TEST_CASE("Test case 439") {
     VkVideoEncodeH264QuantizationMapCapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_H264_QUANTIZATION_MAP_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeH264QuantizationMapCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_H264_QUANTIZATION_MAP_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 439") {
+TEST_CASE("Test case 440") {
     VkVideoEncodeH265QuantizationMapCapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_H265_QUANTIZATION_MAP_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeH265QuantizationMapCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_H265_QUANTIZATION_MAP_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 440") {
+TEST_CASE("Test case 441") {
     VkVideoFormatH265QuantizationMapPropertiesKHR tmp = MAKE_VK_VIDEO_FORMAT_H265_QUANTIZATION_MAP_PROPERTIES_KHR();
     CHECK(offsetof(VkVideoFormatH265QuantizationMapPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_FORMAT_H265_QUANTIZATION_MAP_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 441") {
+TEST_CASE("Test case 442") {
     VkVideoEncodeAV1QuantizationMapCapabilitiesKHR tmp = MAKE_VK_VIDEO_ENCODE_AV1_QUANTIZATION_MAP_CAPABILITIES_KHR();
     CHECK(offsetof(VkVideoEncodeAV1QuantizationMapCapabilitiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_ENCODE_AV1_QUANTIZATION_MAP_CAPABILITIES_KHR);
 }
 
-TEST_CASE("Test case 442") {
+TEST_CASE("Test case 443") {
     VkVideoFormatAV1QuantizationMapPropertiesKHR tmp = MAKE_VK_VIDEO_FORMAT_AV1_QUANTIZATION_MAP_PROPERTIES_KHR();
     CHECK(offsetof(VkVideoFormatAV1QuantizationMapPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_FORMAT_AV1_QUANTIZATION_MAP_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 443") {
+TEST_CASE("Test case 444") {
     VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_RELAXED_EXTENDED_INSTRUCTION_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_RELAXED_EXTENDED_INSTRUCTION_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 444") {
+TEST_CASE("Test case 445") {
     VkPhysicalDeviceMaintenance7FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_MAINTENANCE_7_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceMaintenance7FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_7_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 445") {
+TEST_CASE("Test case 446") {
     VkPhysicalDeviceMaintenance7PropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_MAINTENANCE_7_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceMaintenance7PropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_7_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 446") {
+TEST_CASE("Test case 447") {
     VkPhysicalDeviceLayeredApiPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_LAYERED_API_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceLayeredApiPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_API_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 447") {
+TEST_CASE("Test case 448") {
     VkPhysicalDeviceLayeredApiPropertiesListKHR tmp = MAKE_VK_PHYSICAL_DEVICE_LAYERED_API_PROPERTIES_LIST_KHR();
     CHECK(offsetof(VkPhysicalDeviceLayeredApiPropertiesListKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_API_PROPERTIES_LIST_KHR);
 }
 
-TEST_CASE("Test case 448") {
+TEST_CASE("Test case 449") {
     VkPhysicalDeviceLayeredApiVulkanPropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_LAYERED_API_VULKAN_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceLayeredApiVulkanPropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_API_VULKAN_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 449") {
+TEST_CASE("Test case 450") {
     VkPhysicalDeviceMaintenance8FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_MAINTENANCE_8_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceMaintenance8FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_8_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 450") {
+TEST_CASE("Test case 451") {
     VkMemoryBarrierAccessFlags3KHR tmp = MAKE_VK_MEMORY_BARRIER_ACCESS_FLAGS_3_KHR();
     CHECK(offsetof(VkMemoryBarrierAccessFlags3KHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MEMORY_BARRIER_ACCESS_FLAGS_3_KHR);
 }
 
-TEST_CASE("Test case 451") {
+TEST_CASE("Test case 452") {
     VkPhysicalDeviceVideoMaintenance2FeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_VIDEO_MAINTENANCE_2_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceVideoMaintenance2FeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VIDEO_MAINTENANCE_2_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 452") {
+TEST_CASE("Test case 453") {
     VkVideoDecodeH264InlineSessionParametersInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H264_INLINE_SESSION_PARAMETERS_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH264InlineSessionParametersInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H264_INLINE_SESSION_PARAMETERS_INFO_KHR);
 }
 
-TEST_CASE("Test case 453") {
+TEST_CASE("Test case 454") {
     VkVideoDecodeH265InlineSessionParametersInfoKHR tmp = MAKE_VK_VIDEO_DECODE_H265_INLINE_SESSION_PARAMETERS_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeH265InlineSessionParametersInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_INLINE_SESSION_PARAMETERS_INFO_KHR);
 }
 
-TEST_CASE("Test case 454") {
+TEST_CASE("Test case 455") {
     VkVideoDecodeAV1InlineSessionParametersInfoKHR tmp = MAKE_VK_VIDEO_DECODE_AV1_INLINE_SESSION_PARAMETERS_INFO_KHR();
     CHECK(offsetof(VkVideoDecodeAV1InlineSessionParametersInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VIDEO_DECODE_AV1_INLINE_SESSION_PARAMETERS_INFO_KHR);
 }
 
-TEST_CASE("Test case 455") {
+TEST_CASE("Test case 456") {
     VkPhysicalDeviceDepthClampZeroOneFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_DEPTH_CLAMP_ZERO_ONE_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceDepthClampZeroOneFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLAMP_ZERO_ONE_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 456") {
+TEST_CASE("Test case 457") {
     VkDebugReportCallbackCreateInfoEXT tmp = MAKE_VK_DEBUG_REPORT_CALLBACK_CREATE_INFO_EXT();
     CHECK(offsetof(VkDebugReportCallbackCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_REPORT_CALLBACK_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 457") {
+TEST_CASE("Test case 458") {
     VkPipelineRasterizationStateRasterizationOrderAMD tmp = MAKE_VK_PIPELINE_RASTERIZATION_STATE_RASTERIZATION_ORDER_AMD();
     CHECK(offsetof(VkPipelineRasterizationStateRasterizationOrderAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_RASTERIZATION_ORDER_AMD);
 }
 
-TEST_CASE("Test case 458") {
+TEST_CASE("Test case 459") {
     VkDebugMarkerObjectNameInfoEXT tmp = MAKE_VK_DEBUG_MARKER_OBJECT_NAME_INFO_EXT();
     CHECK(offsetof(VkDebugMarkerObjectNameInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_MARKER_OBJECT_NAME_INFO_EXT);
 }
 
-TEST_CASE("Test case 459") {
+TEST_CASE("Test case 460") {
     VkDebugMarkerObjectTagInfoEXT tmp = MAKE_VK_DEBUG_MARKER_OBJECT_TAG_INFO_EXT();
     CHECK(offsetof(VkDebugMarkerObjectTagInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_MARKER_OBJECT_TAG_INFO_EXT);
 }
 
-TEST_CASE("Test case 460") {
+TEST_CASE("Test case 461") {
     VkDebugMarkerMarkerInfoEXT tmp = MAKE_VK_DEBUG_MARKER_MARKER_INFO_EXT();
     CHECK(offsetof(VkDebugMarkerMarkerInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_MARKER_MARKER_INFO_EXT);
 }
 
-TEST_CASE("Test case 461") {
+TEST_CASE("Test case 462") {
     VkDedicatedAllocationImageCreateInfoNV tmp = MAKE_VK_DEDICATED_ALLOCATION_IMAGE_CREATE_INFO_NV();
     CHECK(offsetof(VkDedicatedAllocationImageCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_IMAGE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 462") {
+TEST_CASE("Test case 463") {
     VkDedicatedAllocationBufferCreateInfoNV tmp = MAKE_VK_DEDICATED_ALLOCATION_BUFFER_CREATE_INFO_NV();
     CHECK(offsetof(VkDedicatedAllocationBufferCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_BUFFER_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 463") {
+TEST_CASE("Test case 464") {
     VkDedicatedAllocationMemoryAllocateInfoNV tmp = MAKE_VK_DEDICATED_ALLOCATION_MEMORY_ALLOCATE_INFO_NV();
     CHECK(offsetof(VkDedicatedAllocationMemoryAllocateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEDICATED_ALLOCATION_MEMORY_ALLOCATE_INFO_NV);
 }
 
-TEST_CASE("Test case 464") {
+TEST_CASE("Test case 465") {
     VkPhysicalDeviceTransformFeedbackFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceTransformFeedbackFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 465") {
+TEST_CASE("Test case 466") {
     VkPhysicalDeviceTransformFeedbackPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceTransformFeedbackPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TRANSFORM_FEEDBACK_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 466") {
+TEST_CASE("Test case 467") {
     VkPipelineRasterizationStateStreamCreateInfoEXT tmp = MAKE_VK_PIPELINE_RASTERIZATION_STATE_STREAM_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineRasterizationStateStreamCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_STREAM_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 467") {
+TEST_CASE("Test case 468") {
     VkCuModuleCreateInfoNVX tmp = MAKE_VK_CU_MODULE_CREATE_INFO_NVX();
     CHECK(offsetof(VkCuModuleCreateInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CU_MODULE_CREATE_INFO_NVX);
 }
 
-TEST_CASE("Test case 468") {
+TEST_CASE("Test case 469") {
     VkCuModuleTexturingModeCreateInfoNVX tmp = MAKE_VK_CU_MODULE_TEXTURING_MODE_CREATE_INFO_NVX();
     CHECK(offsetof(VkCuModuleTexturingModeCreateInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CU_MODULE_TEXTURING_MODE_CREATE_INFO_NVX);
 }
 
-TEST_CASE("Test case 469") {
+TEST_CASE("Test case 470") {
     VkCuFunctionCreateInfoNVX tmp = MAKE_VK_CU_FUNCTION_CREATE_INFO_NVX();
     CHECK(offsetof(VkCuFunctionCreateInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CU_FUNCTION_CREATE_INFO_NVX);
 }
 
-TEST_CASE("Test case 470") {
+TEST_CASE("Test case 471") {
     VkCuLaunchInfoNVX tmp = MAKE_VK_CU_LAUNCH_INFO_NVX();
     CHECK(offsetof(VkCuLaunchInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CU_LAUNCH_INFO_NVX);
 }
 
-TEST_CASE("Test case 471") {
+TEST_CASE("Test case 472") {
     VkImageViewHandleInfoNVX tmp = MAKE_VK_IMAGE_VIEW_HANDLE_INFO_NVX();
     CHECK(offsetof(VkImageViewHandleInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_HANDLE_INFO_NVX);
 }
 
-TEST_CASE("Test case 472") {
+TEST_CASE("Test case 473") {
     VkImageViewAddressPropertiesNVX tmp = MAKE_VK_IMAGE_VIEW_ADDRESS_PROPERTIES_NVX();
     CHECK(offsetof(VkImageViewAddressPropertiesNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_ADDRESS_PROPERTIES_NVX);
 }
 
-TEST_CASE("Test case 473") {
+TEST_CASE("Test case 474") {
     VkTextureLODGatherFormatPropertiesAMD tmp = MAKE_VK_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD();
     CHECK(offsetof(VkTextureLODGatherFormatPropertiesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_TEXTURE_LOD_GATHER_FORMAT_PROPERTIES_AMD);
 }
 
-TEST_CASE("Test case 474") {
+TEST_CASE("Test case 475") {
     VkPhysicalDeviceCornerSampledImageFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCornerSampledImageFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CORNER_SAMPLED_IMAGE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 475") {
+TEST_CASE("Test case 476") {
     VkExternalMemoryImageCreateInfoNV tmp = MAKE_VK_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV();
     CHECK(offsetof(VkExternalMemoryImageCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_IMAGE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 476") {
+TEST_CASE("Test case 477") {
     VkExportMemoryAllocateInfoNV tmp = MAKE_VK_EXPORT_MEMORY_ALLOCATE_INFO_NV();
     CHECK(offsetof(VkExportMemoryAllocateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXPORT_MEMORY_ALLOCATE_INFO_NV);
 }
 
-TEST_CASE("Test case 477") {
+TEST_CASE("Test case 478") {
     VkValidationFlagsEXT tmp = MAKE_VK_VALIDATION_FLAGS_EXT();
     CHECK(offsetof(VkValidationFlagsEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VALIDATION_FLAGS_EXT);
 }
 
-TEST_CASE("Test case 478") {
+TEST_CASE("Test case 479") {
     VkImageViewASTCDecodeModeEXT tmp = MAKE_VK_IMAGE_VIEW_ASTC_DECODE_MODE_EXT();
     CHECK(offsetof(VkImageViewASTCDecodeModeEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_ASTC_DECODE_MODE_EXT);
 }
 
-TEST_CASE("Test case 479") {
+TEST_CASE("Test case 480") {
     VkPhysicalDeviceASTCDecodeFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceASTCDecodeFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ASTC_DECODE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 480") {
+TEST_CASE("Test case 481") {
     VkConditionalRenderingBeginInfoEXT tmp = MAKE_VK_CONDITIONAL_RENDERING_BEGIN_INFO_EXT();
     CHECK(offsetof(VkConditionalRenderingBeginInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CONDITIONAL_RENDERING_BEGIN_INFO_EXT);
 }
 
-TEST_CASE("Test case 481") {
+TEST_CASE("Test case 482") {
     VkPhysicalDeviceConditionalRenderingFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_CONDITIONAL_RENDERING_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceConditionalRenderingFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CONDITIONAL_RENDERING_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 482") {
+TEST_CASE("Test case 483") {
     VkCommandBufferInheritanceConditionalRenderingInfoEXT tmp = MAKE_VK_COMMAND_BUFFER_INHERITANCE_CONDITIONAL_RENDERING_INFO_EXT();
     CHECK(offsetof(VkCommandBufferInheritanceConditionalRenderingInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_CONDITIONAL_RENDERING_INFO_EXT);
 }
 
-TEST_CASE("Test case 483") {
+TEST_CASE("Test case 484") {
     VkPipelineViewportWScalingStateCreateInfoNV tmp = MAKE_VK_PIPELINE_VIEWPORT_W_SCALING_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineViewportWScalingStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_W_SCALING_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 484") {
+TEST_CASE("Test case 485") {
     VkSurfaceCapabilities2EXT tmp = MAKE_VK_SURFACE_CAPABILITIES_2_EXT();
     CHECK(offsetof(VkSurfaceCapabilities2EXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_2_EXT);
 }
 
-TEST_CASE("Test case 485") {
+TEST_CASE("Test case 486") {
     VkDisplayPowerInfoEXT tmp = MAKE_VK_DISPLAY_POWER_INFO_EXT();
     CHECK(offsetof(VkDisplayPowerInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPLAY_POWER_INFO_EXT);
 }
 
-TEST_CASE("Test case 486") {
+TEST_CASE("Test case 487") {
     VkDeviceEventInfoEXT tmp = MAKE_VK_DEVICE_EVENT_INFO_EXT();
     CHECK(offsetof(VkDeviceEventInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_EVENT_INFO_EXT);
 }
 
-TEST_CASE("Test case 487") {
+TEST_CASE("Test case 488") {
     VkDisplayEventInfoEXT tmp = MAKE_VK_DISPLAY_EVENT_INFO_EXT();
     CHECK(offsetof(VkDisplayEventInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPLAY_EVENT_INFO_EXT);
 }
 
-TEST_CASE("Test case 488") {
+TEST_CASE("Test case 489") {
     VkSwapchainCounterCreateInfoEXT tmp = MAKE_VK_SWAPCHAIN_COUNTER_CREATE_INFO_EXT();
     CHECK(offsetof(VkSwapchainCounterCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_COUNTER_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 489") {
+TEST_CASE("Test case 490") {
     VkPresentTimesInfoGOOGLE tmp = MAKE_VK_PRESENT_TIMES_INFO_GOOGLE();
     CHECK(offsetof(VkPresentTimesInfoGOOGLE, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PRESENT_TIMES_INFO_GOOGLE);
 }
 
-TEST_CASE("Test case 490") {
+TEST_CASE("Test case 491") {
     VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX tmp = MAKE_VK_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_ATTRIBUTES_PROPERTIES_NVX();
     CHECK(offsetof(VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_ATTRIBUTES_PROPERTIES_NVX);
 }
 
-TEST_CASE("Test case 491") {
+TEST_CASE("Test case 492") {
     VkMultiviewPerViewAttributesInfoNVX tmp = MAKE_VK_MULTIVIEW_PER_VIEW_ATTRIBUTES_INFO_NVX();
     CHECK(offsetof(VkMultiviewPerViewAttributesInfoNVX, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MULTIVIEW_PER_VIEW_ATTRIBUTES_INFO_NVX);
 }
 
-TEST_CASE("Test case 492") {
+TEST_CASE("Test case 493") {
     VkPipelineViewportSwizzleStateCreateInfoNV tmp = MAKE_VK_PIPELINE_VIEWPORT_SWIZZLE_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineViewportSwizzleStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_SWIZZLE_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 493") {
+TEST_CASE("Test case 494") {
     VkPhysicalDeviceDiscardRectanglePropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DISCARD_RECTANGLE_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDiscardRectanglePropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DISCARD_RECTANGLE_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 494") {
+TEST_CASE("Test case 495") {
     VkPipelineDiscardRectangleStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_DISCARD_RECTANGLE_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineDiscardRectangleStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_DISCARD_RECTANGLE_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 495") {
+TEST_CASE("Test case 496") {
     VkPhysicalDeviceConservativeRasterizationPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_CONSERVATIVE_RASTERIZATION_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceConservativeRasterizationPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CONSERVATIVE_RASTERIZATION_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 496") {
+TEST_CASE("Test case 497") {
     VkPipelineRasterizationConservativeStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_RASTERIZATION_CONSERVATIVE_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineRasterizationConservativeStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_CONSERVATIVE_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 497") {
+TEST_CASE("Test case 498") {
     VkPhysicalDeviceDepthClipEnableFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEPTH_CLIP_ENABLE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDepthClipEnableFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLIP_ENABLE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 498") {
+TEST_CASE("Test case 499") {
     VkPipelineRasterizationDepthClipStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_RASTERIZATION_DEPTH_CLIP_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineRasterizationDepthClipStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_DEPTH_CLIP_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 499") {
+TEST_CASE("Test case 500") {
     VkHdrMetadataEXT tmp = MAKE_VK_HDR_METADATA_EXT();
     CHECK(offsetof(VkHdrMetadataEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_HDR_METADATA_EXT);
 }
 
-TEST_CASE("Test case 500") {
+TEST_CASE("Test case 501") {
     VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG tmp = MAKE_VK_PHYSICAL_DEVICE_RELAXED_LINE_RASTERIZATION_FEATURES_IMG();
     CHECK(offsetof(VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RELAXED_LINE_RASTERIZATION_FEATURES_IMG);
 }
 
-TEST_CASE("Test case 501") {
+TEST_CASE("Test case 502") {
     VkDebugUtilsLabelEXT tmp = MAKE_VK_DEBUG_UTILS_LABEL_EXT();
     CHECK(offsetof(VkDebugUtilsLabelEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_UTILS_LABEL_EXT);
 }
 
-TEST_CASE("Test case 502") {
+TEST_CASE("Test case 503") {
     VkDebugUtilsObjectNameInfoEXT tmp = MAKE_VK_DEBUG_UTILS_OBJECT_NAME_INFO_EXT();
     CHECK(offsetof(VkDebugUtilsObjectNameInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT);
 }
 
-TEST_CASE("Test case 503") {
+TEST_CASE("Test case 504") {
     VkDebugUtilsMessengerCallbackDataEXT tmp = MAKE_VK_DEBUG_UTILS_MESSENGER_CALLBACK_DATA_EXT();
     CHECK(offsetof(VkDebugUtilsMessengerCallbackDataEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CALLBACK_DATA_EXT);
 }
 
-TEST_CASE("Test case 504") {
+TEST_CASE("Test case 505") {
     VkDebugUtilsMessengerCreateInfoEXT tmp = MAKE_VK_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT();
     CHECK(offsetof(VkDebugUtilsMessengerCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 505") {
+TEST_CASE("Test case 506") {
     VkDebugUtilsObjectTagInfoEXT tmp = MAKE_VK_DEBUG_UTILS_OBJECT_TAG_INFO_EXT();
     CHECK(offsetof(VkDebugUtilsObjectTagInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEBUG_UTILS_OBJECT_TAG_INFO_EXT);
 }
 
-TEST_CASE("Test case 506") {
+TEST_CASE("Test case 507") {
     VkAttachmentSampleCountInfoAMD tmp = MAKE_VK_ATTACHMENT_SAMPLE_COUNT_INFO_AMD();
     CHECK(offsetof(VkAttachmentSampleCountInfoAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ATTACHMENT_SAMPLE_COUNT_INFO_AMD);
 }
 
-TEST_CASE("Test case 507") {
+TEST_CASE("Test case 508") {
     VkSampleLocationsInfoEXT tmp = MAKE_VK_SAMPLE_LOCATIONS_INFO_EXT();
     CHECK(offsetof(VkSampleLocationsInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLE_LOCATIONS_INFO_EXT);
 }
 
-TEST_CASE("Test case 508") {
+TEST_CASE("Test case 509") {
     VkRenderPassSampleLocationsBeginInfoEXT tmp = MAKE_VK_RENDER_PASS_SAMPLE_LOCATIONS_BEGIN_INFO_EXT();
     CHECK(offsetof(VkRenderPassSampleLocationsBeginInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_SAMPLE_LOCATIONS_BEGIN_INFO_EXT);
 }
 
-TEST_CASE("Test case 509") {
+TEST_CASE("Test case 510") {
     VkPipelineSampleLocationsStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_SAMPLE_LOCATIONS_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineSampleLocationsStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_SAMPLE_LOCATIONS_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 510") {
+TEST_CASE("Test case 511") {
     VkPhysicalDeviceSampleLocationsPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SAMPLE_LOCATIONS_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceSampleLocationsPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SAMPLE_LOCATIONS_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 511") {
+TEST_CASE("Test case 512") {
     VkMultisamplePropertiesEXT tmp = MAKE_VK_MULTISAMPLE_PROPERTIES_EXT();
     CHECK(offsetof(VkMultisamplePropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MULTISAMPLE_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 512") {
+TEST_CASE("Test case 513") {
     VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 513") {
+TEST_CASE("Test case 514") {
     VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BLEND_OPERATION_ADVANCED_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 514") {
+TEST_CASE("Test case 515") {
     VkPipelineColorBlendAdvancedStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_COLOR_BLEND_ADVANCED_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineColorBlendAdvancedStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_ADVANCED_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 515") {
+TEST_CASE("Test case 516") {
     VkPipelineCoverageToColorStateCreateInfoNV tmp = MAKE_VK_PIPELINE_COVERAGE_TO_COLOR_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineCoverageToColorStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_TO_COLOR_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 516") {
+TEST_CASE("Test case 517") {
     VkPipelineCoverageModulationStateCreateInfoNV tmp = MAKE_VK_PIPELINE_COVERAGE_MODULATION_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineCoverageModulationStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_MODULATION_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 517") {
+TEST_CASE("Test case 518") {
     VkPhysicalDeviceShaderSMBuiltinsPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceShaderSMBuiltinsPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 518") {
+TEST_CASE("Test case 519") {
     VkPhysicalDeviceShaderSMBuiltinsFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceShaderSMBuiltinsFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_SM_BUILTINS_FEATURES_NV);
 }
 
-TEST_CASE("Test case 519") {
+TEST_CASE("Test case 520") {
     VkDrmFormatModifierPropertiesListEXT tmp = MAKE_VK_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT();
     CHECK(offsetof(VkDrmFormatModifierPropertiesListEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_EXT);
 }
 
-TEST_CASE("Test case 520") {
+TEST_CASE("Test case 521") {
     VkPhysicalDeviceImageDrmFormatModifierInfoEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageDrmFormatModifierInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_DRM_FORMAT_MODIFIER_INFO_EXT);
 }
 
-TEST_CASE("Test case 521") {
+TEST_CASE("Test case 522") {
     VkImageDrmFormatModifierListCreateInfoEXT tmp = MAKE_VK_IMAGE_DRM_FORMAT_MODIFIER_LIST_CREATE_INFO_EXT();
     CHECK(offsetof(VkImageDrmFormatModifierListCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_LIST_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 522") {
+TEST_CASE("Test case 523") {
     VkImageDrmFormatModifierExplicitCreateInfoEXT tmp = MAKE_VK_IMAGE_DRM_FORMAT_MODIFIER_EXPLICIT_CREATE_INFO_EXT();
     CHECK(offsetof(VkImageDrmFormatModifierExplicitCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_EXPLICIT_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 523") {
+TEST_CASE("Test case 524") {
     VkImageDrmFormatModifierPropertiesEXT tmp = MAKE_VK_IMAGE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT();
     CHECK(offsetof(VkImageDrmFormatModifierPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_DRM_FORMAT_MODIFIER_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 524") {
+TEST_CASE("Test case 525") {
     VkDrmFormatModifierPropertiesList2EXT tmp = MAKE_VK_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_2_EXT();
     CHECK(offsetof(VkDrmFormatModifierPropertiesList2EXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DRM_FORMAT_MODIFIER_PROPERTIES_LIST_2_EXT);
 }
 
-TEST_CASE("Test case 525") {
+TEST_CASE("Test case 526") {
     VkValidationCacheCreateInfoEXT tmp = MAKE_VK_VALIDATION_CACHE_CREATE_INFO_EXT();
     CHECK(offsetof(VkValidationCacheCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VALIDATION_CACHE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 526") {
+TEST_CASE("Test case 527") {
     VkShaderModuleValidationCacheCreateInfoEXT tmp = MAKE_VK_SHADER_MODULE_VALIDATION_CACHE_CREATE_INFO_EXT();
     CHECK(offsetof(VkShaderModuleValidationCacheCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SHADER_MODULE_VALIDATION_CACHE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 527") {
+TEST_CASE("Test case 528") {
     VkPipelineViewportShadingRateImageStateCreateInfoNV tmp = MAKE_VK_PIPELINE_VIEWPORT_SHADING_RATE_IMAGE_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineViewportShadingRateImageStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_SHADING_RATE_IMAGE_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 528") {
+TEST_CASE("Test case 529") {
     VkPhysicalDeviceShadingRateImageFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceShadingRateImageFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 529") {
+TEST_CASE("Test case 530") {
     VkPhysicalDeviceShadingRateImagePropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceShadingRateImagePropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADING_RATE_IMAGE_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 530") {
+TEST_CASE("Test case 531") {
     VkPipelineViewportCoarseSampleOrderStateCreateInfoNV tmp = MAKE_VK_PIPELINE_VIEWPORT_COARSE_SAMPLE_ORDER_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineViewportCoarseSampleOrderStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_COARSE_SAMPLE_ORDER_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 531") {
+TEST_CASE("Test case 532") {
     VkRayTracingShaderGroupCreateInfoNV tmp = MAKE_VK_RAY_TRACING_SHADER_GROUP_CREATE_INFO_NV();
     CHECK(offsetof(VkRayTracingShaderGroupCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_SHADER_GROUP_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 532") {
+TEST_CASE("Test case 533") {
     VkRayTracingPipelineCreateInfoNV tmp = MAKE_VK_RAY_TRACING_PIPELINE_CREATE_INFO_NV();
     CHECK(offsetof(VkRayTracingPipelineCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 533") {
+TEST_CASE("Test case 534") {
     VkGeometryTrianglesNV tmp = MAKE_VK_GEOMETRY_TRIANGLES_NV();
     CHECK(offsetof(VkGeometryTrianglesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GEOMETRY_TRIANGLES_NV);
 }
 
-TEST_CASE("Test case 534") {
+TEST_CASE("Test case 535") {
     VkGeometryAABBNV tmp = MAKE_VK_GEOMETRY_AABB_NV();
     CHECK(offsetof(VkGeometryAABBNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GEOMETRY_AABB_NV);
 }
 
-TEST_CASE("Test case 535") {
+TEST_CASE("Test case 536") {
     VkGeometryNV tmp = MAKE_VK_GEOMETRY_NV();
     CHECK(offsetof(VkGeometryNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GEOMETRY_NV);
 }
 
-TEST_CASE("Test case 536") {
+TEST_CASE("Test case 537") {
     VkAccelerationStructureInfoNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_INFO_NV();
     CHECK(offsetof(VkAccelerationStructureInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_INFO_NV);
 }
 
-TEST_CASE("Test case 537") {
+TEST_CASE("Test case 538") {
     VkAccelerationStructureCreateInfoNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_CREATE_INFO_NV();
     CHECK(offsetof(VkAccelerationStructureCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 538") {
+TEST_CASE("Test case 539") {
     VkBindAccelerationStructureMemoryInfoNV tmp = MAKE_VK_BIND_ACCELERATION_STRUCTURE_MEMORY_INFO_NV();
     CHECK(offsetof(VkBindAccelerationStructureMemoryInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BIND_ACCELERATION_STRUCTURE_MEMORY_INFO_NV);
 }
 
-TEST_CASE("Test case 539") {
+TEST_CASE("Test case 540") {
     VkWriteDescriptorSetAccelerationStructureNV tmp = MAKE_VK_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_NV();
     CHECK(offsetof(VkWriteDescriptorSetAccelerationStructureNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_NV);
 }
 
-TEST_CASE("Test case 540") {
+TEST_CASE("Test case 541") {
     VkAccelerationStructureMemoryRequirementsInfoNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_MEMORY_REQUIREMENTS_INFO_NV();
     CHECK(offsetof(VkAccelerationStructureMemoryRequirementsInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_MEMORY_REQUIREMENTS_INFO_NV);
 }
 
-TEST_CASE("Test case 541") {
+TEST_CASE("Test case 542") {
     VkPhysicalDeviceRayTracingPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 542") {
+TEST_CASE("Test case 543") {
     VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_REPRESENTATIVE_FRAGMENT_TEST_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_REPRESENTATIVE_FRAGMENT_TEST_FEATURES_NV);
 }
 
-TEST_CASE("Test case 543") {
+TEST_CASE("Test case 544") {
     VkPipelineRepresentativeFragmentTestStateCreateInfoNV tmp = MAKE_VK_PIPELINE_REPRESENTATIVE_FRAGMENT_TEST_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineRepresentativeFragmentTestStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_REPRESENTATIVE_FRAGMENT_TEST_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 544") {
+TEST_CASE("Test case 545") {
     VkPhysicalDeviceImageViewImageFormatInfoEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageViewImageFormatInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_IMAGE_FORMAT_INFO_EXT);
 }
 
-TEST_CASE("Test case 545") {
+TEST_CASE("Test case 546") {
     VkFilterCubicImageViewImageFormatPropertiesEXT tmp = MAKE_VK_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT();
     CHECK(offsetof(VkFilterCubicImageViewImageFormatPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_FILTER_CUBIC_IMAGE_VIEW_IMAGE_FORMAT_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 546") {
+TEST_CASE("Test case 547") {
     VkImportMemoryHostPointerInfoEXT tmp = MAKE_VK_IMPORT_MEMORY_HOST_POINTER_INFO_EXT();
     CHECK(offsetof(VkImportMemoryHostPointerInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMPORT_MEMORY_HOST_POINTER_INFO_EXT);
 }
 
-TEST_CASE("Test case 547") {
+TEST_CASE("Test case 548") {
     VkMemoryHostPointerPropertiesEXT tmp = MAKE_VK_MEMORY_HOST_POINTER_PROPERTIES_EXT();
     CHECK(offsetof(VkMemoryHostPointerPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MEMORY_HOST_POINTER_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 548") {
+TEST_CASE("Test case 549") {
     VkPhysicalDeviceExternalMemoryHostPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_MEMORY_HOST_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceExternalMemoryHostPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_MEMORY_HOST_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 549") {
+TEST_CASE("Test case 550") {
     VkPipelineCompilerControlCreateInfoAMD tmp = MAKE_VK_PIPELINE_COMPILER_CONTROL_CREATE_INFO_AMD();
     CHECK(offsetof(VkPipelineCompilerControlCreateInfoAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COMPILER_CONTROL_CREATE_INFO_AMD);
 }
 
-TEST_CASE("Test case 550") {
+TEST_CASE("Test case 551") {
     VkPhysicalDeviceShaderCorePropertiesAMD tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_AMD();
     CHECK(offsetof(VkPhysicalDeviceShaderCorePropertiesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_AMD);
 }
 
-TEST_CASE("Test case 551") {
+TEST_CASE("Test case 552") {
     VkDeviceMemoryOverallocationCreateInfoAMD tmp = MAKE_VK_DEVICE_MEMORY_OVERALLOCATION_CREATE_INFO_AMD();
     CHECK(offsetof(VkDeviceMemoryOverallocationCreateInfoAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_MEMORY_OVERALLOCATION_CREATE_INFO_AMD);
 }
 
-TEST_CASE("Test case 552") {
+TEST_CASE("Test case 553") {
     VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 553") {
+TEST_CASE("Test case 554") {
     VkPhysicalDeviceMeshShaderFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_MESH_SHADER_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceMeshShaderFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_FEATURES_NV);
 }
 
-TEST_CASE("Test case 554") {
+TEST_CASE("Test case 555") {
     VkPhysicalDeviceMeshShaderPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_MESH_SHADER_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceMeshShaderPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 555") {
+TEST_CASE("Test case 556") {
     VkPhysicalDeviceShaderImageFootprintFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_IMAGE_FOOTPRINT_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceShaderImageFootprintFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_IMAGE_FOOTPRINT_FEATURES_NV);
 }
 
-TEST_CASE("Test case 556") {
+TEST_CASE("Test case 557") {
     VkPipelineViewportExclusiveScissorStateCreateInfoNV tmp = MAKE_VK_PIPELINE_VIEWPORT_EXCLUSIVE_SCISSOR_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineViewportExclusiveScissorStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_EXCLUSIVE_SCISSOR_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 557") {
+TEST_CASE("Test case 558") {
     VkPhysicalDeviceExclusiveScissorFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_EXCLUSIVE_SCISSOR_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceExclusiveScissorFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXCLUSIVE_SCISSOR_FEATURES_NV);
 }
 
-TEST_CASE("Test case 558") {
+TEST_CASE("Test case 559") {
     VkQueueFamilyCheckpointPropertiesNV tmp = MAKE_VK_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_NV();
     CHECK(offsetof(VkQueueFamilyCheckpointPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 559") {
+TEST_CASE("Test case 560") {
     VkCheckpointDataNV tmp = MAKE_VK_CHECKPOINT_DATA_NV();
     CHECK(offsetof(VkCheckpointDataNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CHECKPOINT_DATA_NV);
 }
 
-TEST_CASE("Test case 560") {
+TEST_CASE("Test case 561") {
     VkQueueFamilyCheckpointProperties2NV tmp = MAKE_VK_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_2_NV();
     CHECK(offsetof(VkQueueFamilyCheckpointProperties2NV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_QUEUE_FAMILY_CHECKPOINT_PROPERTIES_2_NV);
 }
 
-TEST_CASE("Test case 561") {
+TEST_CASE("Test case 562") {
     VkCheckpointData2NV tmp = MAKE_VK_CHECKPOINT_DATA_2_NV();
     CHECK(offsetof(VkCheckpointData2NV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CHECKPOINT_DATA_2_NV);
 }
 
-TEST_CASE("Test case 562") {
+TEST_CASE("Test case 563") {
     VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_INTEGER_FUNCTIONS_2_FEATURES_INTEL();
     CHECK(offsetof(VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_INTEGER_FUNCTIONS_2_FEATURES_INTEL);
 }
 
-TEST_CASE("Test case 563") {
+TEST_CASE("Test case 564") {
     VkInitializePerformanceApiInfoINTEL tmp = MAKE_VK_INITIALIZE_PERFORMANCE_API_INFO_INTEL();
     CHECK(offsetof(VkInitializePerformanceApiInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INITIALIZE_PERFORMANCE_API_INFO_INTEL);
 }
 
-TEST_CASE("Test case 564") {
+TEST_CASE("Test case 565") {
     VkQueryPoolPerformanceQueryCreateInfoINTEL tmp = MAKE_VK_QUERY_POOL_PERFORMANCE_QUERY_CREATE_INFO_INTEL();
     CHECK(offsetof(VkQueryPoolPerformanceQueryCreateInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_QUERY_POOL_PERFORMANCE_QUERY_CREATE_INFO_INTEL);
 }
 
-TEST_CASE("Test case 565") {
+TEST_CASE("Test case 566") {
     VkPerformanceMarkerInfoINTEL tmp = MAKE_VK_PERFORMANCE_MARKER_INFO_INTEL();
     CHECK(offsetof(VkPerformanceMarkerInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PERFORMANCE_MARKER_INFO_INTEL);
 }
 
-TEST_CASE("Test case 566") {
+TEST_CASE("Test case 567") {
     VkPerformanceStreamMarkerInfoINTEL tmp = MAKE_VK_PERFORMANCE_STREAM_MARKER_INFO_INTEL();
     CHECK(offsetof(VkPerformanceStreamMarkerInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PERFORMANCE_STREAM_MARKER_INFO_INTEL);
 }
 
-TEST_CASE("Test case 567") {
+TEST_CASE("Test case 568") {
     VkPerformanceOverrideInfoINTEL tmp = MAKE_VK_PERFORMANCE_OVERRIDE_INFO_INTEL();
     CHECK(offsetof(VkPerformanceOverrideInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PERFORMANCE_OVERRIDE_INFO_INTEL);
 }
 
-TEST_CASE("Test case 568") {
+TEST_CASE("Test case 569") {
     VkPerformanceConfigurationAcquireInfoINTEL tmp = MAKE_VK_PERFORMANCE_CONFIGURATION_ACQUIRE_INFO_INTEL();
     CHECK(offsetof(VkPerformanceConfigurationAcquireInfoINTEL, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PERFORMANCE_CONFIGURATION_ACQUIRE_INFO_INTEL);
 }
 
-TEST_CASE("Test case 569") {
+TEST_CASE("Test case 570") {
     VkPhysicalDevicePCIBusInfoPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PCI_BUS_INFO_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDevicePCIBusInfoPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PCI_BUS_INFO_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 570") {
+TEST_CASE("Test case 571") {
     VkDisplayNativeHdrSurfaceCapabilitiesAMD tmp = MAKE_VK_DISPLAY_NATIVE_HDR_SURFACE_CAPABILITIES_AMD();
     CHECK(offsetof(VkDisplayNativeHdrSurfaceCapabilitiesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPLAY_NATIVE_HDR_SURFACE_CAPABILITIES_AMD);
 }
 
-TEST_CASE("Test case 571") {
+TEST_CASE("Test case 572") {
     VkSwapchainDisplayNativeHdrCreateInfoAMD tmp = MAKE_VK_SWAPCHAIN_DISPLAY_NATIVE_HDR_CREATE_INFO_AMD();
     CHECK(offsetof(VkSwapchainDisplayNativeHdrCreateInfoAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_DISPLAY_NATIVE_HDR_CREATE_INFO_AMD);
 }
 
-TEST_CASE("Test case 572") {
+TEST_CASE("Test case 573") {
     VkPhysicalDeviceFragmentDensityMapFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 573") {
+TEST_CASE("Test case 574") {
     VkPhysicalDeviceFragmentDensityMapPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 574") {
+TEST_CASE("Test case 575") {
     VkRenderPassFragmentDensityMapCreateInfoEXT tmp = MAKE_VK_RENDER_PASS_FRAGMENT_DENSITY_MAP_CREATE_INFO_EXT();
     CHECK(offsetof(VkRenderPassFragmentDensityMapCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 575") {
+TEST_CASE("Test case 576") {
     VkRenderingFragmentDensityMapAttachmentInfoEXT tmp = MAKE_VK_RENDERING_FRAGMENT_DENSITY_MAP_ATTACHMENT_INFO_EXT();
     CHECK(offsetof(VkRenderingFragmentDensityMapAttachmentInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDERING_FRAGMENT_DENSITY_MAP_ATTACHMENT_INFO_EXT);
 }
 
-TEST_CASE("Test case 576") {
+TEST_CASE("Test case 577") {
     VkPhysicalDeviceShaderCoreProperties2AMD tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_2_AMD();
     CHECK(offsetof(VkPhysicalDeviceShaderCoreProperties2AMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_2_AMD);
 }
 
-TEST_CASE("Test case 577") {
+TEST_CASE("Test case 578") {
     VkPhysicalDeviceCoherentMemoryFeaturesAMD tmp = MAKE_VK_PHYSICAL_DEVICE_COHERENT_MEMORY_FEATURES_AMD();
     CHECK(offsetof(VkPhysicalDeviceCoherentMemoryFeaturesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COHERENT_MEMORY_FEATURES_AMD);
 }
 
-TEST_CASE("Test case 578") {
+TEST_CASE("Test case 579") {
     VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_IMAGE_ATOMIC_INT64_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_IMAGE_ATOMIC_INT64_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 579") {
+TEST_CASE("Test case 580") {
     VkPhysicalDeviceMemoryBudgetPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MEMORY_BUDGET_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMemoryBudgetPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_BUDGET_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 580") {
+TEST_CASE("Test case 581") {
     VkPhysicalDeviceMemoryPriorityFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MEMORY_PRIORITY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMemoryPriorityFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PRIORITY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 581") {
+TEST_CASE("Test case 582") {
     VkMemoryPriorityAllocateInfoEXT tmp = MAKE_VK_MEMORY_PRIORITY_ALLOCATE_INFO_EXT();
     CHECK(offsetof(VkMemoryPriorityAllocateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MEMORY_PRIORITY_ALLOCATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 582") {
+TEST_CASE("Test case 583") {
     VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DEDICATED_ALLOCATION_IMAGE_ALIASING_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEDICATED_ALLOCATION_IMAGE_ALIASING_FEATURES_NV);
 }
 
-TEST_CASE("Test case 583") {
+TEST_CASE("Test case 584") {
     VkPhysicalDeviceBufferDeviceAddressFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceBufferDeviceAddressFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BUFFER_DEVICE_ADDRESS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 584") {
+TEST_CASE("Test case 585") {
     VkBufferDeviceAddressCreateInfoEXT tmp = MAKE_VK_BUFFER_DEVICE_ADDRESS_CREATE_INFO_EXT();
     CHECK(offsetof(VkBufferDeviceAddressCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BUFFER_DEVICE_ADDRESS_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 585") {
+TEST_CASE("Test case 586") {
     VkValidationFeaturesEXT tmp = MAKE_VK_VALIDATION_FEATURES_EXT();
     CHECK(offsetof(VkValidationFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 586") {
+TEST_CASE("Test case 587") {
     VkCooperativeMatrixPropertiesNV tmp = MAKE_VK_COOPERATIVE_MATRIX_PROPERTIES_NV();
     CHECK(offsetof(VkCooperativeMatrixPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COOPERATIVE_MATRIX_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 587") {
+TEST_CASE("Test case 588") {
     VkPhysicalDeviceCooperativeMatrixFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrixFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_FEATURES_NV);
 }
 
-TEST_CASE("Test case 588") {
+TEST_CASE("Test case 589") {
     VkPhysicalDeviceCooperativeMatrixPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrixPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 589") {
+TEST_CASE("Test case 590") {
     VkPhysicalDeviceCoverageReductionModeFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COVERAGE_REDUCTION_MODE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCoverageReductionModeFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COVERAGE_REDUCTION_MODE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 590") {
+TEST_CASE("Test case 591") {
     VkPipelineCoverageReductionStateCreateInfoNV tmp = MAKE_VK_PIPELINE_COVERAGE_REDUCTION_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineCoverageReductionStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COVERAGE_REDUCTION_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 591") {
+TEST_CASE("Test case 592") {
     VkFramebufferMixedSamplesCombinationNV tmp = MAKE_VK_FRAMEBUFFER_MIXED_SAMPLES_COMBINATION_NV();
     CHECK(offsetof(VkFramebufferMixedSamplesCombinationNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_FRAMEBUFFER_MIXED_SAMPLES_COMBINATION_NV);
 }
 
-TEST_CASE("Test case 592") {
+TEST_CASE("Test case 593") {
     VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADER_INTERLOCK_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADER_INTERLOCK_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 593") {
+TEST_CASE("Test case 594") {
     VkPhysicalDeviceYcbcrImageArraysFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_YCBCR_IMAGE_ARRAYS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceYcbcrImageArraysFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_IMAGE_ARRAYS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 594") {
+TEST_CASE("Test case 595") {
     VkPhysicalDeviceProvokingVertexFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PROVOKING_VERTEX_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceProvokingVertexFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROVOKING_VERTEX_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 595") {
+TEST_CASE("Test case 596") {
     VkPhysicalDeviceProvokingVertexPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PROVOKING_VERTEX_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceProvokingVertexPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PROVOKING_VERTEX_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 596") {
+TEST_CASE("Test case 597") {
     VkPipelineRasterizationProvokingVertexStateCreateInfoEXT tmp = MAKE_VK_PIPELINE_RASTERIZATION_PROVOKING_VERTEX_STATE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineRasterizationProvokingVertexStateCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_PROVOKING_VERTEX_STATE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 597") {
+TEST_CASE("Test case 598") {
     VkHeadlessSurfaceCreateInfoEXT tmp = MAKE_VK_HEADLESS_SURFACE_CREATE_INFO_EXT();
     CHECK(offsetof(VkHeadlessSurfaceCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_HEADLESS_SURFACE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 598") {
+TEST_CASE("Test case 599") {
     VkPhysicalDeviceShaderAtomicFloatFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderAtomicFloatFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 599") {
+TEST_CASE("Test case 600") {
     VkPhysicalDeviceExtendedDynamicStateFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceExtendedDynamicStateFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 600") {
+TEST_CASE("Test case 601") {
     VkPhysicalDeviceMapMemoryPlacedFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MAP_MEMORY_PLACED_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMapMemoryPlacedFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAP_MEMORY_PLACED_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 601") {
+TEST_CASE("Test case 602") {
     VkPhysicalDeviceMapMemoryPlacedPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MAP_MEMORY_PLACED_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMapMemoryPlacedPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAP_MEMORY_PLACED_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 602") {
+TEST_CASE("Test case 603") {
     VkMemoryMapPlacedInfoEXT tmp = MAKE_VK_MEMORY_MAP_PLACED_INFO_EXT();
     CHECK(offsetof(VkMemoryMapPlacedInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MEMORY_MAP_PLACED_INFO_EXT);
 }
 
-TEST_CASE("Test case 603") {
+TEST_CASE("Test case 604") {
     VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT_2_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT_2_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 604") {
+TEST_CASE("Test case 605") {
     VkSurfacePresentModeEXT tmp = MAKE_VK_SURFACE_PRESENT_MODE_EXT();
     CHECK(offsetof(VkSurfacePresentModeEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_PRESENT_MODE_EXT);
 }
 
-TEST_CASE("Test case 605") {
+TEST_CASE("Test case 606") {
     VkSurfacePresentScalingCapabilitiesEXT tmp = MAKE_VK_SURFACE_PRESENT_SCALING_CAPABILITIES_EXT();
     CHECK(offsetof(VkSurfacePresentScalingCapabilitiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_PRESENT_SCALING_CAPABILITIES_EXT);
 }
 
-TEST_CASE("Test case 606") {
+TEST_CASE("Test case 607") {
     VkSurfacePresentModeCompatibilityEXT tmp = MAKE_VK_SURFACE_PRESENT_MODE_COMPATIBILITY_EXT();
     CHECK(offsetof(VkSurfacePresentModeCompatibilityEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_PRESENT_MODE_COMPATIBILITY_EXT);
 }
 
-TEST_CASE("Test case 607") {
+TEST_CASE("Test case 608") {
     VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SWAPCHAIN_MAINTENANCE_1_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SWAPCHAIN_MAINTENANCE_1_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 608") {
+TEST_CASE("Test case 609") {
     VkSwapchainPresentFenceInfoEXT tmp = MAKE_VK_SWAPCHAIN_PRESENT_FENCE_INFO_EXT();
     CHECK(offsetof(VkSwapchainPresentFenceInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_FENCE_INFO_EXT);
 }
 
-TEST_CASE("Test case 609") {
+TEST_CASE("Test case 610") {
     VkSwapchainPresentModesCreateInfoEXT tmp = MAKE_VK_SWAPCHAIN_PRESENT_MODES_CREATE_INFO_EXT();
     CHECK(offsetof(VkSwapchainPresentModesCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_MODES_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 610") {
+TEST_CASE("Test case 611") {
     VkSwapchainPresentModeInfoEXT tmp = MAKE_VK_SWAPCHAIN_PRESENT_MODE_INFO_EXT();
     CHECK(offsetof(VkSwapchainPresentModeInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_MODE_INFO_EXT);
 }
 
-TEST_CASE("Test case 611") {
+TEST_CASE("Test case 612") {
     VkSwapchainPresentScalingCreateInfoEXT tmp = MAKE_VK_SWAPCHAIN_PRESENT_SCALING_CREATE_INFO_EXT();
     CHECK(offsetof(VkSwapchainPresentScalingCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_SCALING_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 612") {
+TEST_CASE("Test case 613") {
     VkReleaseSwapchainImagesInfoEXT tmp = MAKE_VK_RELEASE_SWAPCHAIN_IMAGES_INFO_EXT();
     CHECK(offsetof(VkReleaseSwapchainImagesInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RELEASE_SWAPCHAIN_IMAGES_INFO_EXT);
 }
 
-TEST_CASE("Test case 613") {
+TEST_CASE("Test case 614") {
     VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 614") {
+TEST_CASE("Test case 615") {
     VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_FEATURES_NV);
 }
 
-TEST_CASE("Test case 615") {
+TEST_CASE("Test case 616") {
     VkGraphicsShaderGroupCreateInfoNV tmp = MAKE_VK_GRAPHICS_SHADER_GROUP_CREATE_INFO_NV();
     CHECK(offsetof(VkGraphicsShaderGroupCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GRAPHICS_SHADER_GROUP_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 616") {
+TEST_CASE("Test case 617") {
     VkGraphicsPipelineShaderGroupsCreateInfoNV tmp = MAKE_VK_GRAPHICS_PIPELINE_SHADER_GROUPS_CREATE_INFO_NV();
     CHECK(offsetof(VkGraphicsPipelineShaderGroupsCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_SHADER_GROUPS_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 617") {
+TEST_CASE("Test case 618") {
     VkIndirectCommandsLayoutTokenNV tmp = MAKE_VK_INDIRECT_COMMANDS_LAYOUT_TOKEN_NV();
     CHECK(offsetof(VkIndirectCommandsLayoutTokenNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_TOKEN_NV);
 }
 
-TEST_CASE("Test case 618") {
+TEST_CASE("Test case 619") {
     VkIndirectCommandsLayoutCreateInfoNV tmp = MAKE_VK_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NV();
     CHECK(offsetof(VkIndirectCommandsLayoutCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 619") {
+TEST_CASE("Test case 620") {
     VkGeneratedCommandsInfoNV tmp = MAKE_VK_GENERATED_COMMANDS_INFO_NV();
     CHECK(offsetof(VkGeneratedCommandsInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_INFO_NV);
 }
 
-TEST_CASE("Test case 620") {
+TEST_CASE("Test case 621") {
     VkGeneratedCommandsMemoryRequirementsInfoNV tmp = MAKE_VK_GENERATED_COMMANDS_MEMORY_REQUIREMENTS_INFO_NV();
     CHECK(offsetof(VkGeneratedCommandsMemoryRequirementsInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_MEMORY_REQUIREMENTS_INFO_NV);
 }
 
-TEST_CASE("Test case 621") {
+TEST_CASE("Test case 622") {
     VkPhysicalDeviceInheritedViewportScissorFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_INHERITED_VIEWPORT_SCISSOR_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceInheritedViewportScissorFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INHERITED_VIEWPORT_SCISSOR_FEATURES_NV);
 }
 
-TEST_CASE("Test case 622") {
+TEST_CASE("Test case 623") {
     VkCommandBufferInheritanceViewportScissorInfoNV tmp = MAKE_VK_COMMAND_BUFFER_INHERITANCE_VIEWPORT_SCISSOR_INFO_NV();
     CHECK(offsetof(VkCommandBufferInheritanceViewportScissorInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_VIEWPORT_SCISSOR_INFO_NV);
 }
 
-TEST_CASE("Test case 623") {
+TEST_CASE("Test case 624") {
     VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TEXEL_BUFFER_ALIGNMENT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 624") {
+TEST_CASE("Test case 625") {
     VkRenderPassTransformBeginInfoQCOM tmp = MAKE_VK_RENDER_PASS_TRANSFORM_BEGIN_INFO_QCOM();
     CHECK(offsetof(VkRenderPassTransformBeginInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_TRANSFORM_BEGIN_INFO_QCOM);
 }
 
-TEST_CASE("Test case 625") {
+TEST_CASE("Test case 626") {
     VkCommandBufferInheritanceRenderPassTransformInfoQCOM tmp = MAKE_VK_COMMAND_BUFFER_INHERITANCE_RENDER_PASS_TRANSFORM_INFO_QCOM();
     CHECK(offsetof(VkCommandBufferInheritanceRenderPassTransformInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_RENDER_PASS_TRANSFORM_INFO_QCOM);
 }
 
-TEST_CASE("Test case 626") {
+TEST_CASE("Test case 627") {
     VkPhysicalDeviceDepthBiasControlFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEPTH_BIAS_CONTROL_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDepthBiasControlFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_BIAS_CONTROL_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 627") {
+TEST_CASE("Test case 628") {
     VkDepthBiasInfoEXT tmp = MAKE_VK_DEPTH_BIAS_INFO_EXT();
     CHECK(offsetof(VkDepthBiasInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEPTH_BIAS_INFO_EXT);
 }
 
-TEST_CASE("Test case 628") {
+TEST_CASE("Test case 629") {
     VkDepthBiasRepresentationInfoEXT tmp = MAKE_VK_DEPTH_BIAS_REPRESENTATION_INFO_EXT();
     CHECK(offsetof(VkDepthBiasRepresentationInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEPTH_BIAS_REPRESENTATION_INFO_EXT);
 }
 
-TEST_CASE("Test case 629") {
+TEST_CASE("Test case 630") {
     VkPhysicalDeviceDeviceMemoryReportFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_MEMORY_REPORT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDeviceMemoryReportFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_MEMORY_REPORT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 630") {
+TEST_CASE("Test case 631") {
     VkDeviceMemoryReportCallbackDataEXT tmp = MAKE_VK_DEVICE_MEMORY_REPORT_CALLBACK_DATA_EXT();
     CHECK(offsetof(VkDeviceMemoryReportCallbackDataEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_MEMORY_REPORT_CALLBACK_DATA_EXT);
 }
 
-TEST_CASE("Test case 631") {
+TEST_CASE("Test case 632") {
     VkDeviceDeviceMemoryReportCreateInfoEXT tmp = MAKE_VK_DEVICE_DEVICE_MEMORY_REPORT_CREATE_INFO_EXT();
     CHECK(offsetof(VkDeviceDeviceMemoryReportCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_DEVICE_MEMORY_REPORT_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 632") {
+TEST_CASE("Test case 633") {
     VkPhysicalDeviceRobustness2FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ROBUSTNESS_2_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceRobustness2FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ROBUSTNESS_2_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 633") {
+TEST_CASE("Test case 634") {
     VkPhysicalDeviceRobustness2PropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ROBUSTNESS_2_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceRobustness2PropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ROBUSTNESS_2_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 634") {
+TEST_CASE("Test case 635") {
     VkSamplerCustomBorderColorCreateInfoEXT tmp = MAKE_VK_SAMPLER_CUSTOM_BORDER_COLOR_CREATE_INFO_EXT();
     CHECK(offsetof(VkSamplerCustomBorderColorCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_CUSTOM_BORDER_COLOR_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 635") {
+TEST_CASE("Test case 636") {
     VkPhysicalDeviceCustomBorderColorPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceCustomBorderColorPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 636") {
+TEST_CASE("Test case 637") {
     VkPhysicalDeviceCustomBorderColorFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceCustomBorderColorFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUSTOM_BORDER_COLOR_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 637") {
+TEST_CASE("Test case 638") {
     VkPhysicalDevicePresentBarrierFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_PRESENT_BARRIER_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDevicePresentBarrierFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_BARRIER_FEATURES_NV);
 }
 
-TEST_CASE("Test case 638") {
+TEST_CASE("Test case 639") {
     VkSurfaceCapabilitiesPresentBarrierNV tmp = MAKE_VK_SURFACE_CAPABILITIES_PRESENT_BARRIER_NV();
     CHECK(offsetof(VkSurfaceCapabilitiesPresentBarrierNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SURFACE_CAPABILITIES_PRESENT_BARRIER_NV);
 }
 
-TEST_CASE("Test case 639") {
+TEST_CASE("Test case 640") {
     VkSwapchainPresentBarrierCreateInfoNV tmp = MAKE_VK_SWAPCHAIN_PRESENT_BARRIER_CREATE_INFO_NV();
     CHECK(offsetof(VkSwapchainPresentBarrierCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_PRESENT_BARRIER_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 640") {
+TEST_CASE("Test case 641") {
     VkPhysicalDeviceDiagnosticsConfigFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DIAGNOSTICS_CONFIG_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceDiagnosticsConfigFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DIAGNOSTICS_CONFIG_FEATURES_NV);
 }
 
-TEST_CASE("Test case 641") {
+TEST_CASE("Test case 642") {
     VkDeviceDiagnosticsConfigCreateInfoNV tmp = MAKE_VK_DEVICE_DIAGNOSTICS_CONFIG_CREATE_INFO_NV();
     CHECK(offsetof(VkDeviceDiagnosticsConfigCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_DIAGNOSTICS_CONFIG_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 642") {
+TEST_CASE("Test case 643") {
     VkCudaModuleCreateInfoNV tmp = MAKE_VK_CUDA_MODULE_CREATE_INFO_NV();
     CHECK(offsetof(VkCudaModuleCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CUDA_MODULE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 643") {
+TEST_CASE("Test case 644") {
     VkCudaFunctionCreateInfoNV tmp = MAKE_VK_CUDA_FUNCTION_CREATE_INFO_NV();
     CHECK(offsetof(VkCudaFunctionCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CUDA_FUNCTION_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 644") {
+TEST_CASE("Test case 645") {
     VkCudaLaunchInfoNV tmp = MAKE_VK_CUDA_LAUNCH_INFO_NV();
     CHECK(offsetof(VkCudaLaunchInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CUDA_LAUNCH_INFO_NV);
 }
 
-TEST_CASE("Test case 645") {
+TEST_CASE("Test case 646") {
     VkPhysicalDeviceCudaKernelLaunchFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCudaKernelLaunchFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV);
 }
 
-TEST_CASE("Test case 646") {
+TEST_CASE("Test case 647") {
     VkPhysicalDeviceCudaKernelLaunchPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceCudaKernelLaunchPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 647") {
+TEST_CASE("Test case 648") {
+    VkPhysicalDeviceTileShadingFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM();
+    CHECK(offsetof(VkPhysicalDeviceTileShadingFeaturesQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM);
+}
+
+TEST_CASE("Test case 649") {
+    VkPhysicalDeviceTileShadingPropertiesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM();
+    CHECK(offsetof(VkPhysicalDeviceTileShadingPropertiesQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM);
+}
+
+TEST_CASE("Test case 650") {
+    VkRenderPassTileShadingCreateInfoQCOM tmp = MAKE_VK_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM();
+    CHECK(offsetof(VkRenderPassTileShadingCreateInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM);
+}
+
+TEST_CASE("Test case 651") {
+    VkPerTileBeginInfoQCOM tmp = MAKE_VK_PER_TILE_BEGIN_INFO_QCOM();
+    CHECK(offsetof(VkPerTileBeginInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PER_TILE_BEGIN_INFO_QCOM);
+}
+
+TEST_CASE("Test case 652") {
+    VkPerTileEndInfoQCOM tmp = MAKE_VK_PER_TILE_END_INFO_QCOM();
+    CHECK(offsetof(VkPerTileEndInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PER_TILE_END_INFO_QCOM);
+}
+
+TEST_CASE("Test case 653") {
+    VkDispatchTileInfoQCOM tmp = MAKE_VK_DISPATCH_TILE_INFO_QCOM();
+    CHECK(offsetof(VkDispatchTileInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPATCH_TILE_INFO_QCOM);
+}
+
+TEST_CASE("Test case 654") {
     VkQueryLowLatencySupportNV tmp = MAKE_VK_QUERY_LOW_LATENCY_SUPPORT_NV();
     CHECK(offsetof(VkQueryLowLatencySupportNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_QUERY_LOW_LATENCY_SUPPORT_NV);
 }
 
-TEST_CASE("Test case 648") {
+TEST_CASE("Test case 655") {
     VkPhysicalDeviceDescriptorBufferPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDescriptorBufferPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 649") {
+TEST_CASE("Test case 656") {
     VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 650") {
+TEST_CASE("Test case 657") {
     VkPhysicalDeviceDescriptorBufferFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDescriptorBufferFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 651") {
+TEST_CASE("Test case 658") {
     VkDescriptorAddressInfoEXT tmp = MAKE_VK_DESCRIPTOR_ADDRESS_INFO_EXT();
     CHECK(offsetof(VkDescriptorAddressInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_ADDRESS_INFO_EXT);
 }
 
-TEST_CASE("Test case 652") {
+TEST_CASE("Test case 659") {
     VkDescriptorBufferBindingInfoEXT tmp = MAKE_VK_DESCRIPTOR_BUFFER_BINDING_INFO_EXT();
     CHECK(offsetof(VkDescriptorBufferBindingInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_BUFFER_BINDING_INFO_EXT);
 }
 
-TEST_CASE("Test case 653") {
+TEST_CASE("Test case 660") {
     VkDescriptorBufferBindingPushDescriptorBufferHandleEXT tmp = MAKE_VK_DESCRIPTOR_BUFFER_BINDING_PUSH_DESCRIPTOR_BUFFER_HANDLE_EXT();
     CHECK(offsetof(VkDescriptorBufferBindingPushDescriptorBufferHandleEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_BUFFER_BINDING_PUSH_DESCRIPTOR_BUFFER_HANDLE_EXT);
 }
 
-TEST_CASE("Test case 654") {
+TEST_CASE("Test case 661") {
     VkDescriptorGetInfoEXT tmp = MAKE_VK_DESCRIPTOR_GET_INFO_EXT();
     CHECK(offsetof(VkDescriptorGetInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_GET_INFO_EXT);
 }
 
-TEST_CASE("Test case 655") {
+TEST_CASE("Test case 662") {
     VkBufferCaptureDescriptorDataInfoEXT tmp = MAKE_VK_BUFFER_CAPTURE_DESCRIPTOR_DATA_INFO_EXT();
     CHECK(offsetof(VkBufferCaptureDescriptorDataInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BUFFER_CAPTURE_DESCRIPTOR_DATA_INFO_EXT);
 }
 
-TEST_CASE("Test case 656") {
+TEST_CASE("Test case 663") {
     VkImageCaptureDescriptorDataInfoEXT tmp = MAKE_VK_IMAGE_CAPTURE_DESCRIPTOR_DATA_INFO_EXT();
     CHECK(offsetof(VkImageCaptureDescriptorDataInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_CAPTURE_DESCRIPTOR_DATA_INFO_EXT);
 }
 
-TEST_CASE("Test case 657") {
+TEST_CASE("Test case 664") {
     VkImageViewCaptureDescriptorDataInfoEXT tmp = MAKE_VK_IMAGE_VIEW_CAPTURE_DESCRIPTOR_DATA_INFO_EXT();
     CHECK(offsetof(VkImageViewCaptureDescriptorDataInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_CAPTURE_DESCRIPTOR_DATA_INFO_EXT);
 }
 
-TEST_CASE("Test case 658") {
+TEST_CASE("Test case 665") {
     VkSamplerCaptureDescriptorDataInfoEXT tmp = MAKE_VK_SAMPLER_CAPTURE_DESCRIPTOR_DATA_INFO_EXT();
     CHECK(offsetof(VkSamplerCaptureDescriptorDataInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_CAPTURE_DESCRIPTOR_DATA_INFO_EXT);
 }
 
-TEST_CASE("Test case 659") {
+TEST_CASE("Test case 666") {
     VkOpaqueCaptureDescriptorDataCreateInfoEXT tmp = MAKE_VK_OPAQUE_CAPTURE_DESCRIPTOR_DATA_CREATE_INFO_EXT();
     CHECK(offsetof(VkOpaqueCaptureDescriptorDataCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPAQUE_CAPTURE_DESCRIPTOR_DATA_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 660") {
+TEST_CASE("Test case 667") {
     VkAccelerationStructureCaptureDescriptorDataInfoEXT tmp = MAKE_VK_ACCELERATION_STRUCTURE_CAPTURE_DESCRIPTOR_DATA_INFO_EXT();
     CHECK(offsetof(VkAccelerationStructureCaptureDescriptorDataInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_CAPTURE_DESCRIPTOR_DATA_INFO_EXT);
 }
 
-TEST_CASE("Test case 661") {
+TEST_CASE("Test case 668") {
     VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 662") {
+TEST_CASE("Test case 669") {
     VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_GRAPHICS_PIPELINE_LIBRARY_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 663") {
+TEST_CASE("Test case 670") {
     VkGraphicsPipelineLibraryCreateInfoEXT tmp = MAKE_VK_GRAPHICS_PIPELINE_LIBRARY_CREATE_INFO_EXT();
     CHECK(offsetof(VkGraphicsPipelineLibraryCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_LIBRARY_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 664") {
+TEST_CASE("Test case 671") {
     VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_EARLY_AND_LATE_FRAGMENT_TESTS_FEATURES_AMD();
     CHECK(offsetof(VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_EARLY_AND_LATE_FRAGMENT_TESTS_FEATURES_AMD);
 }
 
-TEST_CASE("Test case 665") {
+TEST_CASE("Test case 672") {
     VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_ENUMS_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_ENUMS_FEATURES_NV);
 }
 
-TEST_CASE("Test case 666") {
+TEST_CASE("Test case 673") {
     VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_ENUMS_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_SHADING_RATE_ENUMS_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 667") {
+TEST_CASE("Test case 674") {
     VkPipelineFragmentShadingRateEnumStateCreateInfoNV tmp = MAKE_VK_PIPELINE_FRAGMENT_SHADING_RATE_ENUM_STATE_CREATE_INFO_NV();
     CHECK(offsetof(VkPipelineFragmentShadingRateEnumStateCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_FRAGMENT_SHADING_RATE_ENUM_STATE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 668") {
+TEST_CASE("Test case 675") {
     VkAccelerationStructureGeometryMotionTrianglesDataNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_MOTION_TRIANGLES_DATA_NV();
     CHECK(offsetof(VkAccelerationStructureGeometryMotionTrianglesDataNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_MOTION_TRIANGLES_DATA_NV);
 }
 
-TEST_CASE("Test case 669") {
+TEST_CASE("Test case 676") {
     VkAccelerationStructureMotionInfoNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_MOTION_INFO_NV();
     CHECK(offsetof(VkAccelerationStructureMotionInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_MOTION_INFO_NV);
 }
 
-TEST_CASE("Test case 670") {
+TEST_CASE("Test case 677") {
     VkPhysicalDeviceRayTracingMotionBlurFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_MOTION_BLUR_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingMotionBlurFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_MOTION_BLUR_FEATURES_NV);
 }
 
-TEST_CASE("Test case 671") {
+TEST_CASE("Test case 678") {
     VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_YCBCR_2_PLANE_444_FORMATS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_2_PLANE_444_FORMATS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 672") {
+TEST_CASE("Test case 679") {
     VkPhysicalDeviceFragmentDensityMap2FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFragmentDensityMap2FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 673") {
+TEST_CASE("Test case 680") {
     VkPhysicalDeviceFragmentDensityMap2PropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFragmentDensityMap2PropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_2_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 674") {
+TEST_CASE("Test case 681") {
     VkCopyCommandTransformInfoQCOM tmp = MAKE_VK_COPY_COMMAND_TRANSFORM_INFO_QCOM();
     CHECK(offsetof(VkCopyCommandTransformInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_COMMAND_TRANSFORM_INFO_QCOM);
 }
 
-TEST_CASE("Test case 675") {
+TEST_CASE("Test case 682") {
     VkPhysicalDeviceImageCompressionControlFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageCompressionControlFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 676") {
+TEST_CASE("Test case 683") {
     VkImageCompressionControlEXT tmp = MAKE_VK_IMAGE_COMPRESSION_CONTROL_EXT();
     CHECK(offsetof(VkImageCompressionControlEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_COMPRESSION_CONTROL_EXT);
 }
 
-TEST_CASE("Test case 677") {
+TEST_CASE("Test case 684") {
     VkImageCompressionPropertiesEXT tmp = MAKE_VK_IMAGE_COMPRESSION_PROPERTIES_EXT();
     CHECK(offsetof(VkImageCompressionPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_COMPRESSION_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 678") {
+TEST_CASE("Test case 685") {
     VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_LAYOUT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_LAYOUT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 679") {
+TEST_CASE("Test case 686") {
     VkPhysicalDevice4444FormatsFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_4444_FORMATS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevice4444FormatsFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_4444_FORMATS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 680") {
+TEST_CASE("Test case 687") {
     VkPhysicalDeviceFaultFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FAULT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFaultFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FAULT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 681") {
+TEST_CASE("Test case 688") {
     VkDeviceFaultCountsEXT tmp = MAKE_VK_DEVICE_FAULT_COUNTS_EXT();
     CHECK(offsetof(VkDeviceFaultCountsEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_FAULT_COUNTS_EXT);
 }
 
-TEST_CASE("Test case 682") {
+TEST_CASE("Test case 689") {
     VkDeviceFaultInfoEXT tmp = MAKE_VK_DEVICE_FAULT_INFO_EXT();
     CHECK(offsetof(VkDeviceFaultInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_FAULT_INFO_EXT);
 }
 
-TEST_CASE("Test case 683") {
+TEST_CASE("Test case 690") {
     VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_RASTERIZATION_ORDER_ATTACHMENT_ACCESS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RASTERIZATION_ORDER_ATTACHMENT_ACCESS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 684") {
+TEST_CASE("Test case 691") {
     VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_RGBA10X6_FORMATS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RGBA10X6_FORMATS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 685") {
+TEST_CASE("Test case 692") {
     VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MUTABLE_DESCRIPTOR_TYPE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MUTABLE_DESCRIPTOR_TYPE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 686") {
+TEST_CASE("Test case 693") {
     VkMutableDescriptorTypeCreateInfoEXT tmp = MAKE_VK_MUTABLE_DESCRIPTOR_TYPE_CREATE_INFO_EXT();
     CHECK(offsetof(VkMutableDescriptorTypeCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MUTABLE_DESCRIPTOR_TYPE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 687") {
+TEST_CASE("Test case 694") {
     VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_VERTEX_INPUT_DYNAMIC_STATE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_INPUT_DYNAMIC_STATE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 688") {
+TEST_CASE("Test case 695") {
     VkVertexInputBindingDescription2EXT tmp = MAKE_VK_VERTEX_INPUT_BINDING_DESCRIPTION_2_EXT();
     CHECK(offsetof(VkVertexInputBindingDescription2EXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VERTEX_INPUT_BINDING_DESCRIPTION_2_EXT);
 }
 
-TEST_CASE("Test case 689") {
+TEST_CASE("Test case 696") {
     VkVertexInputAttributeDescription2EXT tmp = MAKE_VK_VERTEX_INPUT_ATTRIBUTE_DESCRIPTION_2_EXT();
     CHECK(offsetof(VkVertexInputAttributeDescription2EXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_VERTEX_INPUT_ATTRIBUTE_DESCRIPTION_2_EXT);
 }
 
-TEST_CASE("Test case 690") {
+TEST_CASE("Test case 697") {
     VkPhysicalDeviceDrmPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DRM_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDrmPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DRM_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 691") {
+TEST_CASE("Test case 698") {
     VkPhysicalDeviceAddressBindingReportFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ADDRESS_BINDING_REPORT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceAddressBindingReportFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ADDRESS_BINDING_REPORT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 692") {
+TEST_CASE("Test case 699") {
     VkDeviceAddressBindingCallbackDataEXT tmp = MAKE_VK_DEVICE_ADDRESS_BINDING_CALLBACK_DATA_EXT();
     CHECK(offsetof(VkDeviceAddressBindingCallbackDataEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_ADDRESS_BINDING_CALLBACK_DATA_EXT);
 }
 
-TEST_CASE("Test case 693") {
+TEST_CASE("Test case 700") {
     VkPhysicalDeviceDepthClipControlFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEPTH_CLIP_CONTROL_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDepthClipControlFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLIP_CONTROL_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 694") {
+TEST_CASE("Test case 701") {
     VkPipelineViewportDepthClipControlCreateInfoEXT tmp = MAKE_VK_PIPELINE_VIEWPORT_DEPTH_CLIP_CONTROL_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineViewportDepthClipControlCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_DEPTH_CLIP_CONTROL_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 695") {
+TEST_CASE("Test case 702") {
     VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PRIMITIVE_TOPOLOGY_LIST_RESTART_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRIMITIVE_TOPOLOGY_LIST_RESTART_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 696") {
+TEST_CASE("Test case 703") {
     VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PRESENT_MODE_FIFO_LATEST_READY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_MODE_FIFO_LATEST_READY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 697") {
+TEST_CASE("Test case 704") {
     VkSubpassShadingPipelineCreateInfoHUAWEI tmp = MAKE_VK_SUBPASS_SHADING_PIPELINE_CREATE_INFO_HUAWEI();
     CHECK(offsetof(VkSubpassShadingPipelineCreateInfoHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SUBPASS_SHADING_PIPELINE_CREATE_INFO_HUAWEI);
 }
 
-TEST_CASE("Test case 698") {
+TEST_CASE("Test case 705") {
     VkPhysicalDeviceSubpassShadingFeaturesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_SUBPASS_SHADING_FEATURES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceSubpassShadingFeaturesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBPASS_SHADING_FEATURES_HUAWEI);
 }
 
-TEST_CASE("Test case 699") {
+TEST_CASE("Test case 706") {
     VkPhysicalDeviceSubpassShadingPropertiesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_SUBPASS_SHADING_PROPERTIES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceSubpassShadingPropertiesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBPASS_SHADING_PROPERTIES_HUAWEI);
 }
 
-TEST_CASE("Test case 700") {
+TEST_CASE("Test case 707") {
     VkPhysicalDeviceInvocationMaskFeaturesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_INVOCATION_MASK_FEATURES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceInvocationMaskFeaturesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INVOCATION_MASK_FEATURES_HUAWEI);
 }
 
-TEST_CASE("Test case 701") {
+TEST_CASE("Test case 708") {
     VkMemoryGetRemoteAddressInfoNV tmp = MAKE_VK_MEMORY_GET_REMOTE_ADDRESS_INFO_NV();
     CHECK(offsetof(VkMemoryGetRemoteAddressInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MEMORY_GET_REMOTE_ADDRESS_INFO_NV);
 }
 
-TEST_CASE("Test case 702") {
+TEST_CASE("Test case 709") {
     VkPhysicalDeviceExternalMemoryRDMAFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_MEMORY_RDMA_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceExternalMemoryRDMAFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_MEMORY_RDMA_FEATURES_NV);
 }
 
-TEST_CASE("Test case 703") {
+TEST_CASE("Test case 710") {
     VkPipelinePropertiesIdentifierEXT tmp = MAKE_VK_PIPELINE_PROPERTIES_IDENTIFIER_EXT();
     CHECK(offsetof(VkPipelinePropertiesIdentifierEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_PROPERTIES_IDENTIFIER_EXT);
 }
 
-TEST_CASE("Test case 704") {
+TEST_CASE("Test case 711") {
     VkPhysicalDevicePipelinePropertiesFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_PROPERTIES_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePipelinePropertiesFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_PROPERTIES_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 705") {
+TEST_CASE("Test case 712") {
     VkPhysicalDeviceFrameBoundaryFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAME_BOUNDARY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceFrameBoundaryFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAME_BOUNDARY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 706") {
+TEST_CASE("Test case 713") {
     VkFrameBoundaryEXT tmp = MAKE_VK_FRAME_BOUNDARY_EXT();
     CHECK(offsetof(VkFrameBoundaryEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_FRAME_BOUNDARY_EXT);
 }
 
-TEST_CASE("Test case 707") {
+TEST_CASE("Test case 714") {
     VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 708") {
+TEST_CASE("Test case 715") {
     VkSubpassResolvePerformanceQueryEXT tmp = MAKE_VK_SUBPASS_RESOLVE_PERFORMANCE_QUERY_EXT();
     CHECK(offsetof(VkSubpassResolvePerformanceQueryEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SUBPASS_RESOLVE_PERFORMANCE_QUERY_EXT);
 }
 
-TEST_CASE("Test case 709") {
+TEST_CASE("Test case 716") {
     VkMultisampledRenderToSingleSampledInfoEXT tmp = MAKE_VK_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_INFO_EXT();
     CHECK(offsetof(VkMultisampledRenderToSingleSampledInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MULTISAMPLED_RENDER_TO_SINGLE_SAMPLED_INFO_EXT);
 }
 
-TEST_CASE("Test case 710") {
+TEST_CASE("Test case 717") {
     VkPhysicalDeviceExtendedDynamicState2FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_2_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceExtendedDynamicState2FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_2_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 711") {
+TEST_CASE("Test case 718") {
     VkPhysicalDeviceColorWriteEnableFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_COLOR_WRITE_ENABLE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceColorWriteEnableFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COLOR_WRITE_ENABLE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 712") {
+TEST_CASE("Test case 719") {
     VkPipelineColorWriteCreateInfoEXT tmp = MAKE_VK_PIPELINE_COLOR_WRITE_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineColorWriteCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_COLOR_WRITE_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 713") {
+TEST_CASE("Test case 720") {
     VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PRIMITIVES_GENERATED_QUERY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRIMITIVES_GENERATED_QUERY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 714") {
+TEST_CASE("Test case 721") {
     VkPhysicalDeviceImageViewMinLodFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_VIEW_MIN_LOD_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageViewMinLodFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_VIEW_MIN_LOD_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 715") {
+TEST_CASE("Test case 722") {
     VkImageViewMinLodCreateInfoEXT tmp = MAKE_VK_IMAGE_VIEW_MIN_LOD_CREATE_INFO_EXT();
     CHECK(offsetof(VkImageViewMinLodCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_MIN_LOD_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 716") {
+TEST_CASE("Test case 723") {
     VkPhysicalDeviceMultiDrawFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MULTI_DRAW_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMultiDrawFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 717") {
+TEST_CASE("Test case 724") {
     VkPhysicalDeviceMultiDrawPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MULTI_DRAW_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMultiDrawPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTI_DRAW_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 718") {
+TEST_CASE("Test case 725") {
     VkPhysicalDeviceImage2DViewOf3DFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_2D_VIEW_OF_3D_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceImage2DViewOf3DFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_2D_VIEW_OF_3D_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 719") {
+TEST_CASE("Test case 726") {
     VkPhysicalDeviceShaderTileImageFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_TILE_IMAGE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderTileImageFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_TILE_IMAGE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 720") {
+TEST_CASE("Test case 727") {
     VkPhysicalDeviceShaderTileImagePropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_TILE_IMAGE_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderTileImagePropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_TILE_IMAGE_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 721") {
+TEST_CASE("Test case 728") {
     VkMicromapBuildInfoEXT tmp = MAKE_VK_MICROMAP_BUILD_INFO_EXT();
     CHECK(offsetof(VkMicromapBuildInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MICROMAP_BUILD_INFO_EXT);
 }
 
-TEST_CASE("Test case 722") {
+TEST_CASE("Test case 729") {
     VkMicromapCreateInfoEXT tmp = MAKE_VK_MICROMAP_CREATE_INFO_EXT();
     CHECK(offsetof(VkMicromapCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MICROMAP_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 723") {
+TEST_CASE("Test case 730") {
     VkPhysicalDeviceOpacityMicromapFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_OPACITY_MICROMAP_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceOpacityMicromapFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_OPACITY_MICROMAP_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 724") {
+TEST_CASE("Test case 731") {
     VkPhysicalDeviceOpacityMicromapPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_OPACITY_MICROMAP_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceOpacityMicromapPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_OPACITY_MICROMAP_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 725") {
+TEST_CASE("Test case 732") {
     VkMicromapVersionInfoEXT tmp = MAKE_VK_MICROMAP_VERSION_INFO_EXT();
     CHECK(offsetof(VkMicromapVersionInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MICROMAP_VERSION_INFO_EXT);
 }
 
-TEST_CASE("Test case 726") {
+TEST_CASE("Test case 733") {
     VkCopyMicromapToMemoryInfoEXT tmp = MAKE_VK_COPY_MICROMAP_TO_MEMORY_INFO_EXT();
     CHECK(offsetof(VkCopyMicromapToMemoryInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_MICROMAP_TO_MEMORY_INFO_EXT);
 }
 
-TEST_CASE("Test case 727") {
+TEST_CASE("Test case 734") {
     VkCopyMemoryToMicromapInfoEXT tmp = MAKE_VK_COPY_MEMORY_TO_MICROMAP_INFO_EXT();
     CHECK(offsetof(VkCopyMemoryToMicromapInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_MEMORY_TO_MICROMAP_INFO_EXT);
 }
 
-TEST_CASE("Test case 728") {
+TEST_CASE("Test case 735") {
     VkCopyMicromapInfoEXT tmp = MAKE_VK_COPY_MICROMAP_INFO_EXT();
     CHECK(offsetof(VkCopyMicromapInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_MICROMAP_INFO_EXT);
 }
 
-TEST_CASE("Test case 729") {
+TEST_CASE("Test case 736") {
     VkMicromapBuildSizesInfoEXT tmp = MAKE_VK_MICROMAP_BUILD_SIZES_INFO_EXT();
     CHECK(offsetof(VkMicromapBuildSizesInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MICROMAP_BUILD_SIZES_INFO_EXT);
 }
 
-TEST_CASE("Test case 730") {
+TEST_CASE("Test case 737") {
     VkAccelerationStructureTrianglesOpacityMicromapEXT tmp = MAKE_VK_ACCELERATION_STRUCTURE_TRIANGLES_OPACITY_MICROMAP_EXT();
     CHECK(offsetof(VkAccelerationStructureTrianglesOpacityMicromapEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_TRIANGLES_OPACITY_MICROMAP_EXT);
 }
 
-TEST_CASE("Test case 731") {
+TEST_CASE("Test case 738") {
     VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_FEATURES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_FEATURES_HUAWEI);
 }
 
-TEST_CASE("Test case 732") {
+TEST_CASE("Test case 739") {
     VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_PROPERTIES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_PROPERTIES_HUAWEI);
 }
 
-TEST_CASE("Test case 733") {
+TEST_CASE("Test case 740") {
     VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_VRS_FEATURES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CLUSTER_CULLING_SHADER_VRS_FEATURES_HUAWEI);
 }
 
-TEST_CASE("Test case 734") {
+TEST_CASE("Test case 741") {
     VkPhysicalDeviceBorderColorSwizzleFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_BORDER_COLOR_SWIZZLE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceBorderColorSwizzleFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_BORDER_COLOR_SWIZZLE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 735") {
+TEST_CASE("Test case 742") {
     VkSamplerBorderColorComponentMappingCreateInfoEXT tmp = MAKE_VK_SAMPLER_BORDER_COLOR_COMPONENT_MAPPING_CREATE_INFO_EXT();
     CHECK(offsetof(VkSamplerBorderColorComponentMappingCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_BORDER_COLOR_COMPONENT_MAPPING_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 736") {
+TEST_CASE("Test case 743") {
     VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PAGEABLE_DEVICE_LOCAL_MEMORY_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PAGEABLE_DEVICE_LOCAL_MEMORY_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 737") {
+TEST_CASE("Test case 744") {
     VkPhysicalDeviceShaderCorePropertiesARM tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_ARM();
     CHECK(offsetof(VkPhysicalDeviceShaderCorePropertiesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_PROPERTIES_ARM);
 }
 
-TEST_CASE("Test case 738") {
+TEST_CASE("Test case 745") {
     VkDeviceQueueShaderCoreControlCreateInfoARM tmp = MAKE_VK_DEVICE_QUEUE_SHADER_CORE_CONTROL_CREATE_INFO_ARM();
     CHECK(offsetof(VkDeviceQueueShaderCoreControlCreateInfoARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DEVICE_QUEUE_SHADER_CORE_CONTROL_CREATE_INFO_ARM);
 }
 
-TEST_CASE("Test case 739") {
+TEST_CASE("Test case 746") {
     VkPhysicalDeviceSchedulingControlsFeaturesARM tmp = MAKE_VK_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_FEATURES_ARM();
     CHECK(offsetof(VkPhysicalDeviceSchedulingControlsFeaturesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_FEATURES_ARM);
 }
 
-TEST_CASE("Test case 740") {
+TEST_CASE("Test case 747") {
     VkPhysicalDeviceSchedulingControlsPropertiesARM tmp = MAKE_VK_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_PROPERTIES_ARM();
     CHECK(offsetof(VkPhysicalDeviceSchedulingControlsPropertiesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_PROPERTIES_ARM);
 }
 
-TEST_CASE("Test case 741") {
+TEST_CASE("Test case 748") {
     VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_SLICED_VIEW_OF_3D_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_SLICED_VIEW_OF_3D_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 742") {
+TEST_CASE("Test case 749") {
     VkImageViewSlicedCreateInfoEXT tmp = MAKE_VK_IMAGE_VIEW_SLICED_CREATE_INFO_EXT();
     CHECK(offsetof(VkImageViewSlicedCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_SLICED_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 743") {
+TEST_CASE("Test case 750") {
     VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE tmp = MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VALVE();
     CHECK(offsetof(VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_SET_HOST_MAPPING_FEATURES_VALVE);
 }
 
-TEST_CASE("Test case 744") {
+TEST_CASE("Test case 751") {
     VkDescriptorSetBindingReferenceVALVE tmp = MAKE_VK_DESCRIPTOR_SET_BINDING_REFERENCE_VALVE();
     CHECK(offsetof(VkDescriptorSetBindingReferenceVALVE, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_SET_BINDING_REFERENCE_VALVE);
 }
 
-TEST_CASE("Test case 745") {
+TEST_CASE("Test case 752") {
     VkDescriptorSetLayoutHostMappingInfoVALVE tmp = MAKE_VK_DESCRIPTOR_SET_LAYOUT_HOST_MAPPING_INFO_VALVE();
     CHECK(offsetof(VkDescriptorSetLayoutHostMappingInfoVALVE, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_HOST_MAPPING_INFO_VALVE);
 }
 
-TEST_CASE("Test case 746") {
+TEST_CASE("Test case 753") {
     VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_NON_SEAMLESS_CUBE_MAP_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NON_SEAMLESS_CUBE_MAP_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 747") {
+TEST_CASE("Test case 754") {
     VkPhysicalDeviceRenderPassStripedFeaturesARM tmp = MAKE_VK_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_FEATURES_ARM();
     CHECK(offsetof(VkPhysicalDeviceRenderPassStripedFeaturesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_FEATURES_ARM);
 }
 
-TEST_CASE("Test case 748") {
+TEST_CASE("Test case 755") {
     VkPhysicalDeviceRenderPassStripedPropertiesARM tmp = MAKE_VK_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_PROPERTIES_ARM();
     CHECK(offsetof(VkPhysicalDeviceRenderPassStripedPropertiesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RENDER_PASS_STRIPED_PROPERTIES_ARM);
 }
 
-TEST_CASE("Test case 749") {
+TEST_CASE("Test case 756") {
     VkRenderPassStripeInfoARM tmp = MAKE_VK_RENDER_PASS_STRIPE_INFO_ARM();
     CHECK(offsetof(VkRenderPassStripeInfoARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_INFO_ARM);
 }
 
-TEST_CASE("Test case 750") {
+TEST_CASE("Test case 757") {
     VkRenderPassStripeBeginInfoARM tmp = MAKE_VK_RENDER_PASS_STRIPE_BEGIN_INFO_ARM();
     CHECK(offsetof(VkRenderPassStripeBeginInfoARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_BEGIN_INFO_ARM);
 }
 
-TEST_CASE("Test case 751") {
+TEST_CASE("Test case 758") {
     VkRenderPassStripeSubmitInfoARM tmp = MAKE_VK_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM();
     CHECK(offsetof(VkRenderPassStripeSubmitInfoARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM);
 }
 
-TEST_CASE("Test case 752") {
-    VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM();
-    CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM, sType) == 0);
-    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM);
+TEST_CASE("Test case 759") {
+    VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT();
+    CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 753") {
-    VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM();
-    CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM, sType) == 0);
-    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM);
+TEST_CASE("Test case 760") {
+    VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT();
+    CHECK(offsetof(VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 754") {
-    VkSubpassFragmentDensityMapOffsetEndInfoQCOM tmp = MAKE_VK_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM();
-    CHECK(offsetof(VkSubpassFragmentDensityMapOffsetEndInfoQCOM, sType) == 0);
-    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM);
+TEST_CASE("Test case 761") {
+    VkRenderPassFragmentDensityMapOffsetEndInfoEXT tmp = MAKE_VK_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT();
+    CHECK(offsetof(VkRenderPassFragmentDensityMapOffsetEndInfoEXT, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT);
 }
 
-TEST_CASE("Test case 755") {
+TEST_CASE("Test case 762") {
     VkPhysicalDeviceCopyMemoryIndirectFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCopyMemoryIndirectFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV);
 }
 
-TEST_CASE("Test case 756") {
+TEST_CASE("Test case 763") {
     VkPhysicalDeviceCopyMemoryIndirectPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceCopyMemoryIndirectPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 757") {
+TEST_CASE("Test case 764") {
     VkPhysicalDeviceMemoryDecompressionFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceMemoryDecompressionFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV);
 }
 
-TEST_CASE("Test case 758") {
+TEST_CASE("Test case 765") {
     VkPhysicalDeviceMemoryDecompressionPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceMemoryDecompressionPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 759") {
+TEST_CASE("Test case 766") {
     VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_COMPUTE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_COMPUTE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 760") {
+TEST_CASE("Test case 767") {
     VkComputePipelineIndirectBufferInfoNV tmp = MAKE_VK_COMPUTE_PIPELINE_INDIRECT_BUFFER_INFO_NV();
     CHECK(offsetof(VkComputePipelineIndirectBufferInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_INDIRECT_BUFFER_INFO_NV);
 }
 
-TEST_CASE("Test case 761") {
+TEST_CASE("Test case 768") {
     VkPipelineIndirectDeviceAddressInfoNV tmp = MAKE_VK_PIPELINE_INDIRECT_DEVICE_ADDRESS_INFO_NV();
     CHECK(offsetof(VkPipelineIndirectDeviceAddressInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_INDIRECT_DEVICE_ADDRESS_INFO_NV);
 }
 
-TEST_CASE("Test case 762") {
+TEST_CASE("Test case 769") {
     VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_LINEAR_SWEPT_SPHERES_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_LINEAR_SWEPT_SPHERES_FEATURES_NV);
 }
 
-TEST_CASE("Test case 763") {
+TEST_CASE("Test case 770") {
     VkAccelerationStructureGeometryLinearSweptSpheresDataNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_LINEAR_SWEPT_SPHERES_DATA_NV();
     CHECK(offsetof(VkAccelerationStructureGeometryLinearSweptSpheresDataNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_LINEAR_SWEPT_SPHERES_DATA_NV);
 }
 
-TEST_CASE("Test case 764") {
+TEST_CASE("Test case 771") {
     VkAccelerationStructureGeometrySpheresDataNV tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_SPHERES_DATA_NV();
     CHECK(offsetof(VkAccelerationStructureGeometrySpheresDataNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_SPHERES_DATA_NV);
 }
 
-TEST_CASE("Test case 765") {
+TEST_CASE("Test case 772") {
     VkPhysicalDeviceLinearColorAttachmentFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_LINEAR_COLOR_ATTACHMENT_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceLinearColorAttachmentFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LINEAR_COLOR_ATTACHMENT_FEATURES_NV);
 }
 
-TEST_CASE("Test case 766") {
+TEST_CASE("Test case 773") {
     VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_SWAPCHAIN_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_COMPRESSION_CONTROL_SWAPCHAIN_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 767") {
+TEST_CASE("Test case 774") {
     VkImageViewSampleWeightCreateInfoQCOM tmp = MAKE_VK_IMAGE_VIEW_SAMPLE_WEIGHT_CREATE_INFO_QCOM();
     CHECK(offsetof(VkImageViewSampleWeightCreateInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_VIEW_SAMPLE_WEIGHT_CREATE_INFO_QCOM);
 }
 
-TEST_CASE("Test case 768") {
+TEST_CASE("Test case 775") {
     VkPhysicalDeviceImageProcessingFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_PROCESSING_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceImageProcessingFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_PROCESSING_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 769") {
+TEST_CASE("Test case 776") {
     VkPhysicalDeviceImageProcessingPropertiesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_PROCESSING_PROPERTIES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceImageProcessingPropertiesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_PROCESSING_PROPERTIES_QCOM);
 }
 
-TEST_CASE("Test case 770") {
+TEST_CASE("Test case 777") {
     VkPhysicalDeviceNestedCommandBufferFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceNestedCommandBufferFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 771") {
+TEST_CASE("Test case 778") {
     VkPhysicalDeviceNestedCommandBufferPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceNestedCommandBufferPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_NESTED_COMMAND_BUFFER_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 772") {
+TEST_CASE("Test case 779") {
     VkExternalMemoryAcquireUnmodifiedEXT tmp = MAKE_VK_EXTERNAL_MEMORY_ACQUIRE_UNMODIFIED_EXT();
     CHECK(offsetof(VkExternalMemoryAcquireUnmodifiedEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXTERNAL_MEMORY_ACQUIRE_UNMODIFIED_EXT);
 }
 
-TEST_CASE("Test case 773") {
+TEST_CASE("Test case 780") {
     VkPhysicalDeviceExtendedDynamicState3FeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceExtendedDynamicState3FeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 774") {
+TEST_CASE("Test case 781") {
     VkPhysicalDeviceExtendedDynamicState3PropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceExtendedDynamicState3PropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 775") {
+TEST_CASE("Test case 782") {
     VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SUBPASS_MERGE_FEEDBACK_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SUBPASS_MERGE_FEEDBACK_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 776") {
+TEST_CASE("Test case 783") {
     VkRenderPassCreationControlEXT tmp = MAKE_VK_RENDER_PASS_CREATION_CONTROL_EXT();
     CHECK(offsetof(VkRenderPassCreationControlEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_CREATION_CONTROL_EXT);
 }
 
-TEST_CASE("Test case 777") {
+TEST_CASE("Test case 784") {
     VkRenderPassCreationFeedbackCreateInfoEXT tmp = MAKE_VK_RENDER_PASS_CREATION_FEEDBACK_CREATE_INFO_EXT();
     CHECK(offsetof(VkRenderPassCreationFeedbackCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_CREATION_FEEDBACK_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 778") {
+TEST_CASE("Test case 785") {
     VkRenderPassSubpassFeedbackCreateInfoEXT tmp = MAKE_VK_RENDER_PASS_SUBPASS_FEEDBACK_CREATE_INFO_EXT();
     CHECK(offsetof(VkRenderPassSubpassFeedbackCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDER_PASS_SUBPASS_FEEDBACK_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 779") {
+TEST_CASE("Test case 786") {
     VkDirectDriverLoadingInfoLUNARG tmp = MAKE_VK_DIRECT_DRIVER_LOADING_INFO_LUNARG();
     CHECK(offsetof(VkDirectDriverLoadingInfoLUNARG, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DIRECT_DRIVER_LOADING_INFO_LUNARG);
 }
 
-TEST_CASE("Test case 780") {
+TEST_CASE("Test case 787") {
     VkDirectDriverLoadingListLUNARG tmp = MAKE_VK_DIRECT_DRIVER_LOADING_LIST_LUNARG();
     CHECK(offsetof(VkDirectDriverLoadingListLUNARG, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DIRECT_DRIVER_LOADING_LIST_LUNARG);
 }
 
-TEST_CASE("Test case 781") {
+TEST_CASE("Test case 788") {
     VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 782") {
+TEST_CASE("Test case 789") {
     VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_MODULE_IDENTIFIER_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 783") {
+TEST_CASE("Test case 790") {
     VkPipelineShaderStageModuleIdentifierCreateInfoEXT tmp = MAKE_VK_PIPELINE_SHADER_STAGE_MODULE_IDENTIFIER_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineShaderStageModuleIdentifierCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_MODULE_IDENTIFIER_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 784") {
+TEST_CASE("Test case 791") {
     VkShaderModuleIdentifierEXT tmp = MAKE_VK_SHADER_MODULE_IDENTIFIER_EXT();
     CHECK(offsetof(VkShaderModuleIdentifierEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SHADER_MODULE_IDENTIFIER_EXT);
 }
 
-TEST_CASE("Test case 785") {
+TEST_CASE("Test case 792") {
     VkPhysicalDeviceOpticalFlowFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_OPTICAL_FLOW_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceOpticalFlowFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_OPTICAL_FLOW_FEATURES_NV);
 }
 
-TEST_CASE("Test case 786") {
+TEST_CASE("Test case 793") {
     VkPhysicalDeviceOpticalFlowPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_OPTICAL_FLOW_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceOpticalFlowPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_OPTICAL_FLOW_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 787") {
+TEST_CASE("Test case 794") {
     VkOpticalFlowImageFormatInfoNV tmp = MAKE_VK_OPTICAL_FLOW_IMAGE_FORMAT_INFO_NV();
     CHECK(offsetof(VkOpticalFlowImageFormatInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPTICAL_FLOW_IMAGE_FORMAT_INFO_NV);
 }
 
-TEST_CASE("Test case 788") {
+TEST_CASE("Test case 795") {
     VkOpticalFlowImageFormatPropertiesNV tmp = MAKE_VK_OPTICAL_FLOW_IMAGE_FORMAT_PROPERTIES_NV();
     CHECK(offsetof(VkOpticalFlowImageFormatPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPTICAL_FLOW_IMAGE_FORMAT_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 789") {
+TEST_CASE("Test case 796") {
     VkOpticalFlowSessionCreateInfoNV tmp = MAKE_VK_OPTICAL_FLOW_SESSION_CREATE_INFO_NV();
     CHECK(offsetof(VkOpticalFlowSessionCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPTICAL_FLOW_SESSION_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 790") {
+TEST_CASE("Test case 797") {
     VkOpticalFlowSessionCreatePrivateDataInfoNV tmp = MAKE_VK_OPTICAL_FLOW_SESSION_CREATE_PRIVATE_DATA_INFO_NV();
     CHECK(offsetof(VkOpticalFlowSessionCreatePrivateDataInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPTICAL_FLOW_SESSION_CREATE_PRIVATE_DATA_INFO_NV);
 }
 
-TEST_CASE("Test case 791") {
+TEST_CASE("Test case 798") {
     VkOpticalFlowExecuteInfoNV tmp = MAKE_VK_OPTICAL_FLOW_EXECUTE_INFO_NV();
     CHECK(offsetof(VkOpticalFlowExecuteInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OPTICAL_FLOW_EXECUTE_INFO_NV);
 }
 
-TEST_CASE("Test case 792") {
+TEST_CASE("Test case 799") {
     VkPhysicalDeviceLegacyDitheringFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_LEGACY_DITHERING_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceLegacyDitheringFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LEGACY_DITHERING_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 793") {
+TEST_CASE("Test case 800") {
     VkPhysicalDeviceAntiLagFeaturesAMD tmp = MAKE_VK_PHYSICAL_DEVICE_ANTI_LAG_FEATURES_AMD();
     CHECK(offsetof(VkPhysicalDeviceAntiLagFeaturesAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ANTI_LAG_FEATURES_AMD);
 }
 
-TEST_CASE("Test case 794") {
+TEST_CASE("Test case 801") {
     VkAntiLagPresentationInfoAMD tmp = MAKE_VK_ANTI_LAG_PRESENTATION_INFO_AMD();
     CHECK(offsetof(VkAntiLagPresentationInfoAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ANTI_LAG_PRESENTATION_INFO_AMD);
 }
 
-TEST_CASE("Test case 795") {
+TEST_CASE("Test case 802") {
     VkAntiLagDataAMD tmp = MAKE_VK_ANTI_LAG_DATA_AMD();
     CHECK(offsetof(VkAntiLagDataAMD, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ANTI_LAG_DATA_AMD);
 }
 
-TEST_CASE("Test case 796") {
+TEST_CASE("Test case 803") {
     VkPhysicalDeviceShaderObjectFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_OBJECT_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderObjectFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_OBJECT_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 797") {
+TEST_CASE("Test case 804") {
     VkPhysicalDeviceShaderObjectPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_OBJECT_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderObjectPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_OBJECT_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 798") {
+TEST_CASE("Test case 805") {
     VkShaderCreateInfoEXT tmp = MAKE_VK_SHADER_CREATE_INFO_EXT();
     CHECK(offsetof(VkShaderCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SHADER_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 799") {
+TEST_CASE("Test case 806") {
     VkPhysicalDeviceTilePropertiesFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_TILE_PROPERTIES_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceTilePropertiesFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_PROPERTIES_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 800") {
+TEST_CASE("Test case 807") {
     VkTilePropertiesQCOM tmp = MAKE_VK_TILE_PROPERTIES_QCOM();
     CHECK(offsetof(VkTilePropertiesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_TILE_PROPERTIES_QCOM);
 }
 
-TEST_CASE("Test case 801") {
+TEST_CASE("Test case 808") {
     VkPhysicalDeviceAmigoProfilingFeaturesSEC tmp = MAKE_VK_PHYSICAL_DEVICE_AMIGO_PROFILING_FEATURES_SEC();
     CHECK(offsetof(VkPhysicalDeviceAmigoProfilingFeaturesSEC, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_AMIGO_PROFILING_FEATURES_SEC);
 }
 
-TEST_CASE("Test case 802") {
+TEST_CASE("Test case 809") {
     VkAmigoProfilingSubmitInfoSEC tmp = MAKE_VK_AMIGO_PROFILING_SUBMIT_INFO_SEC();
     CHECK(offsetof(VkAmigoProfilingSubmitInfoSEC, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_AMIGO_PROFILING_SUBMIT_INFO_SEC);
 }
 
-TEST_CASE("Test case 803") {
+TEST_CASE("Test case 810") {
     VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_VIEWPORTS_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_VIEWPORTS_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 804") {
+TEST_CASE("Test case 811") {
     VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_INVOCATION_REORDER_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_INVOCATION_REORDER_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 805") {
+TEST_CASE("Test case 812") {
     VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_INVOCATION_REORDER_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_INVOCATION_REORDER_FEATURES_NV);
 }
 
-TEST_CASE("Test case 806") {
+TEST_CASE("Test case 813") {
     VkPhysicalDeviceCooperativeVectorPropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_VECTOR_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeVectorPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_VECTOR_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 807") {
+TEST_CASE("Test case 814") {
     VkPhysicalDeviceCooperativeVectorFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_VECTOR_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeVectorFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_VECTOR_FEATURES_NV);
 }
 
-TEST_CASE("Test case 808") {
+TEST_CASE("Test case 815") {
     VkCooperativeVectorPropertiesNV tmp = MAKE_VK_COOPERATIVE_VECTOR_PROPERTIES_NV();
     CHECK(offsetof(VkCooperativeVectorPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COOPERATIVE_VECTOR_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 809") {
+TEST_CASE("Test case 816") {
     VkConvertCooperativeVectorMatrixInfoNV tmp = MAKE_VK_CONVERT_COOPERATIVE_VECTOR_MATRIX_INFO_NV();
     CHECK(offsetof(VkConvertCooperativeVectorMatrixInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CONVERT_COOPERATIVE_VECTOR_MATRIX_INFO_NV);
 }
 
-TEST_CASE("Test case 810") {
+TEST_CASE("Test case 817") {
     VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_SPARSE_ADDRESS_SPACE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_SPARSE_ADDRESS_SPACE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 811") {
+TEST_CASE("Test case 818") {
     VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_EXTENDED_SPARSE_ADDRESS_SPACE_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_SPARSE_ADDRESS_SPACE_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 812") {
+TEST_CASE("Test case 819") {
     VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_LEGACY_VERTEX_ATTRIBUTES_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LEGACY_VERTEX_ATTRIBUTES_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 813") {
+TEST_CASE("Test case 820") {
     VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_LEGACY_VERTEX_ATTRIBUTES_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LEGACY_VERTEX_ATTRIBUTES_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 814") {
+TEST_CASE("Test case 821") {
     VkLayerSettingsCreateInfoEXT tmp = MAKE_VK_LAYER_SETTINGS_CREATE_INFO_EXT();
     CHECK(offsetof(VkLayerSettingsCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LAYER_SETTINGS_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 815") {
+TEST_CASE("Test case 822") {
     VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CORE_BUILTINS_FEATURES_ARM();
     CHECK(offsetof(VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_BUILTINS_FEATURES_ARM);
 }
 
-TEST_CASE("Test case 816") {
+TEST_CASE("Test case 823") {
     VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_CORE_BUILTINS_PROPERTIES_ARM();
     CHECK(offsetof(VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CORE_BUILTINS_PROPERTIES_ARM);
 }
 
-TEST_CASE("Test case 817") {
+TEST_CASE("Test case 824") {
     VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_LIBRARY_GROUP_HANDLES_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_LIBRARY_GROUP_HANDLES_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 818") {
+TEST_CASE("Test case 825") {
     VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DYNAMIC_RENDERING_UNUSED_ATTACHMENTS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DYNAMIC_RENDERING_UNUSED_ATTACHMENTS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 819") {
+TEST_CASE("Test case 826") {
     VkLatencySleepModeInfoNV tmp = MAKE_VK_LATENCY_SLEEP_MODE_INFO_NV();
     CHECK(offsetof(VkLatencySleepModeInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LATENCY_SLEEP_MODE_INFO_NV);
 }
 
-TEST_CASE("Test case 820") {
+TEST_CASE("Test case 827") {
     VkLatencySleepInfoNV tmp = MAKE_VK_LATENCY_SLEEP_INFO_NV();
     CHECK(offsetof(VkLatencySleepInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LATENCY_SLEEP_INFO_NV);
 }
 
-TEST_CASE("Test case 821") {
+TEST_CASE("Test case 828") {
     VkSetLatencyMarkerInfoNV tmp = MAKE_VK_SET_LATENCY_MARKER_INFO_NV();
     CHECK(offsetof(VkSetLatencyMarkerInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SET_LATENCY_MARKER_INFO_NV);
 }
 
-TEST_CASE("Test case 822") {
+TEST_CASE("Test case 829") {
     VkLatencyTimingsFrameReportNV tmp = MAKE_VK_LATENCY_TIMINGS_FRAME_REPORT_NV();
     CHECK(offsetof(VkLatencyTimingsFrameReportNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LATENCY_TIMINGS_FRAME_REPORT_NV);
 }
 
-TEST_CASE("Test case 823") {
+TEST_CASE("Test case 830") {
     VkGetLatencyMarkerInfoNV tmp = MAKE_VK_GET_LATENCY_MARKER_INFO_NV();
     CHECK(offsetof(VkGetLatencyMarkerInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GET_LATENCY_MARKER_INFO_NV);
 }
 
-TEST_CASE("Test case 824") {
+TEST_CASE("Test case 831") {
     VkLatencySubmissionPresentIdNV tmp = MAKE_VK_LATENCY_SUBMISSION_PRESENT_ID_NV();
     CHECK(offsetof(VkLatencySubmissionPresentIdNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LATENCY_SUBMISSION_PRESENT_ID_NV);
 }
 
-TEST_CASE("Test case 825") {
+TEST_CASE("Test case 832") {
     VkSwapchainLatencyCreateInfoNV tmp = MAKE_VK_SWAPCHAIN_LATENCY_CREATE_INFO_NV();
     CHECK(offsetof(VkSwapchainLatencyCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SWAPCHAIN_LATENCY_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 826") {
+TEST_CASE("Test case 833") {
     VkOutOfBandQueueTypeInfoNV tmp = MAKE_VK_OUT_OF_BAND_QUEUE_TYPE_INFO_NV();
     CHECK(offsetof(VkOutOfBandQueueTypeInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_OUT_OF_BAND_QUEUE_TYPE_INFO_NV);
 }
 
-TEST_CASE("Test case 827") {
+TEST_CASE("Test case 834") {
     VkLatencySurfaceCapabilitiesNV tmp = MAKE_VK_LATENCY_SURFACE_CAPABILITIES_NV();
     CHECK(offsetof(VkLatencySurfaceCapabilitiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_LATENCY_SURFACE_CAPABILITIES_NV);
 }
 
-TEST_CASE("Test case 828") {
+TEST_CASE("Test case 835") {
     VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_RENDER_AREAS_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MULTIVIEW_PER_VIEW_RENDER_AREAS_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 829") {
+TEST_CASE("Test case 836") {
     VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM tmp = MAKE_VK_MULTIVIEW_PER_VIEW_RENDER_AREAS_RENDER_PASS_BEGIN_INFO_QCOM();
     CHECK(offsetof(VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_MULTIVIEW_PER_VIEW_RENDER_AREAS_RENDER_PASS_BEGIN_INFO_QCOM);
 }
 
-TEST_CASE("Test case 830") {
+TEST_CASE("Test case 837") {
     VkPhysicalDevicePerStageDescriptorSetFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_PER_STAGE_DESCRIPTOR_SET_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDevicePerStageDescriptorSetFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PER_STAGE_DESCRIPTOR_SET_FEATURES_NV);
 }
 
-TEST_CASE("Test case 831") {
+TEST_CASE("Test case 838") {
     VkPhysicalDeviceImageProcessing2FeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_PROCESSING_2_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceImageProcessing2FeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_PROCESSING_2_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 832") {
+TEST_CASE("Test case 839") {
     VkPhysicalDeviceImageProcessing2PropertiesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_PROCESSING_2_PROPERTIES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceImageProcessing2PropertiesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_PROCESSING_2_PROPERTIES_QCOM);
 }
 
-TEST_CASE("Test case 833") {
+TEST_CASE("Test case 840") {
     VkSamplerBlockMatchWindowCreateInfoQCOM tmp = MAKE_VK_SAMPLER_BLOCK_MATCH_WINDOW_CREATE_INFO_QCOM();
     CHECK(offsetof(VkSamplerBlockMatchWindowCreateInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_BLOCK_MATCH_WINDOW_CREATE_INFO_QCOM);
 }
 
-TEST_CASE("Test case 834") {
+TEST_CASE("Test case 841") {
     VkPhysicalDeviceCubicWeightsFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_CUBIC_WEIGHTS_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceCubicWeightsFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUBIC_WEIGHTS_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 835") {
+TEST_CASE("Test case 842") {
     VkSamplerCubicWeightsCreateInfoQCOM tmp = MAKE_VK_SAMPLER_CUBIC_WEIGHTS_CREATE_INFO_QCOM();
     CHECK(offsetof(VkSamplerCubicWeightsCreateInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_CUBIC_WEIGHTS_CREATE_INFO_QCOM);
 }
 
-TEST_CASE("Test case 836") {
+TEST_CASE("Test case 843") {
     VkBlitImageCubicWeightsInfoQCOM tmp = MAKE_VK_BLIT_IMAGE_CUBIC_WEIGHTS_INFO_QCOM();
     CHECK(offsetof(VkBlitImageCubicWeightsInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BLIT_IMAGE_CUBIC_WEIGHTS_INFO_QCOM);
 }
 
-TEST_CASE("Test case 837") {
+TEST_CASE("Test case 844") {
     VkPhysicalDeviceYcbcrDegammaFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_YCBCR_DEGAMMA_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceYcbcrDegammaFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_YCBCR_DEGAMMA_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 838") {
+TEST_CASE("Test case 845") {
     VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM tmp = MAKE_VK_SAMPLER_YCBCR_CONVERSION_YCBCR_DEGAMMA_CREATE_INFO_QCOM();
     CHECK(offsetof(VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SAMPLER_YCBCR_CONVERSION_YCBCR_DEGAMMA_CREATE_INFO_QCOM);
 }
 
-TEST_CASE("Test case 839") {
+TEST_CASE("Test case 846") {
     VkPhysicalDeviceCubicClampFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_CUBIC_CLAMP_FEATURES_QCOM();
     CHECK(offsetof(VkPhysicalDeviceCubicClampFeaturesQCOM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUBIC_CLAMP_FEATURES_QCOM);
 }
 
-TEST_CASE("Test case 840") {
+TEST_CASE("Test case 847") {
     VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 841") {
+TEST_CASE("Test case 848") {
     VkPhysicalDeviceLayeredDriverPropertiesMSFT tmp = MAKE_VK_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT();
     CHECK(offsetof(VkPhysicalDeviceLayeredDriverPropertiesMSFT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT);
 }
 
-TEST_CASE("Test case 842") {
+TEST_CASE("Test case 849") {
     VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV);
 }
 
-TEST_CASE("Test case 843") {
+TEST_CASE("Test case 850") {
+    VkPhysicalDeviceTileMemoryHeapFeaturesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM();
+    CHECK(offsetof(VkPhysicalDeviceTileMemoryHeapFeaturesQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM);
+}
+
+TEST_CASE("Test case 851") {
+    VkPhysicalDeviceTileMemoryHeapPropertiesQCOM tmp = MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM();
+    CHECK(offsetof(VkPhysicalDeviceTileMemoryHeapPropertiesQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM);
+}
+
+TEST_CASE("Test case 852") {
+    VkTileMemoryRequirementsQCOM tmp = MAKE_VK_TILE_MEMORY_REQUIREMENTS_QCOM();
+    CHECK(offsetof(VkTileMemoryRequirementsQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_TILE_MEMORY_REQUIREMENTS_QCOM);
+}
+
+TEST_CASE("Test case 853") {
+    VkTileMemoryBindInfoQCOM tmp = MAKE_VK_TILE_MEMORY_BIND_INFO_QCOM();
+    CHECK(offsetof(VkTileMemoryBindInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_TILE_MEMORY_BIND_INFO_QCOM);
+}
+
+TEST_CASE("Test case 854") {
+    VkTileMemorySizeInfoQCOM tmp = MAKE_VK_TILE_MEMORY_SIZE_INFO_QCOM();
+    CHECK(offsetof(VkTileMemorySizeInfoQCOM, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_TILE_MEMORY_SIZE_INFO_QCOM);
+}
+
+TEST_CASE("Test case 855") {
     VkDisplaySurfaceStereoCreateInfoNV tmp = MAKE_VK_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV();
     CHECK(offsetof(VkDisplaySurfaceStereoCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 844") {
+TEST_CASE("Test case 856") {
     VkDisplayModeStereoPropertiesNV tmp = MAKE_VK_DISPLAY_MODE_STEREO_PROPERTIES_NV();
     CHECK(offsetof(VkDisplayModeStereoPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_DISPLAY_MODE_STEREO_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 845") {
+TEST_CASE("Test case 857") {
     VkPhysicalDeviceRawAccessChainsFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRawAccessChainsFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV);
 }
 
-TEST_CASE("Test case 846") {
+TEST_CASE("Test case 858") {
+    VkExternalComputeQueueDeviceCreateInfoNV tmp = MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV();
+    CHECK(offsetof(VkExternalComputeQueueDeviceCreateInfoNV, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV);
+}
+
+TEST_CASE("Test case 859") {
+    VkExternalComputeQueueCreateInfoNV tmp = MAKE_VK_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV();
+    CHECK(offsetof(VkExternalComputeQueueCreateInfoNV, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV);
+}
+
+TEST_CASE("Test case 860") {
+    VkExternalComputeQueueDataParamsNV tmp = MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV();
+    CHECK(offsetof(VkExternalComputeQueueDataParamsNV, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV);
+}
+
+TEST_CASE("Test case 861") {
+    VkPhysicalDeviceExternalComputeQueuePropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV();
+    CHECK(offsetof(VkPhysicalDeviceExternalComputeQueuePropertiesNV, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV);
+}
+
+TEST_CASE("Test case 862") {
     VkPhysicalDeviceCommandBufferInheritanceFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCommandBufferInheritanceFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 847") {
+TEST_CASE("Test case 863") {
     VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV);
 }
 
-TEST_CASE("Test case 848") {
+TEST_CASE("Test case 864") {
     VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 849") {
+TEST_CASE("Test case 865") {
     VkPhysicalDeviceRayTracingValidationFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_VALIDATION_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceRayTracingValidationFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_VALIDATION_FEATURES_NV);
 }
 
-TEST_CASE("Test case 850") {
+TEST_CASE("Test case 866") {
     VkPhysicalDeviceClusterAccelerationStructureFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_CLUSTER_ACCELERATION_STRUCTURE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceClusterAccelerationStructureFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CLUSTER_ACCELERATION_STRUCTURE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 851") {
+TEST_CASE("Test case 867") {
     VkPhysicalDeviceClusterAccelerationStructurePropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_CLUSTER_ACCELERATION_STRUCTURE_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceClusterAccelerationStructurePropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CLUSTER_ACCELERATION_STRUCTURE_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 852") {
+TEST_CASE("Test case 868") {
     VkClusterAccelerationStructureClustersBottomLevelInputNV tmp = MAKE_VK_CLUSTER_ACCELERATION_STRUCTURE_CLUSTERS_BOTTOM_LEVEL_INPUT_NV();
     CHECK(offsetof(VkClusterAccelerationStructureClustersBottomLevelInputNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CLUSTER_ACCELERATION_STRUCTURE_CLUSTERS_BOTTOM_LEVEL_INPUT_NV);
 }
 
-TEST_CASE("Test case 853") {
+TEST_CASE("Test case 869") {
     VkClusterAccelerationStructureTriangleClusterInputNV tmp = MAKE_VK_CLUSTER_ACCELERATION_STRUCTURE_TRIANGLE_CLUSTER_INPUT_NV();
     CHECK(offsetof(VkClusterAccelerationStructureTriangleClusterInputNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CLUSTER_ACCELERATION_STRUCTURE_TRIANGLE_CLUSTER_INPUT_NV);
 }
 
-TEST_CASE("Test case 854") {
+TEST_CASE("Test case 870") {
     VkClusterAccelerationStructureMoveObjectsInputNV tmp = MAKE_VK_CLUSTER_ACCELERATION_STRUCTURE_MOVE_OBJECTS_INPUT_NV();
     CHECK(offsetof(VkClusterAccelerationStructureMoveObjectsInputNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CLUSTER_ACCELERATION_STRUCTURE_MOVE_OBJECTS_INPUT_NV);
 }
 
-TEST_CASE("Test case 855") {
+TEST_CASE("Test case 871") {
     VkClusterAccelerationStructureInputInfoNV tmp = MAKE_VK_CLUSTER_ACCELERATION_STRUCTURE_INPUT_INFO_NV();
     CHECK(offsetof(VkClusterAccelerationStructureInputInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CLUSTER_ACCELERATION_STRUCTURE_INPUT_INFO_NV);
 }
 
-TEST_CASE("Test case 856") {
+TEST_CASE("Test case 872") {
     VkClusterAccelerationStructureCommandsInfoNV tmp = MAKE_VK_CLUSTER_ACCELERATION_STRUCTURE_COMMANDS_INFO_NV();
     CHECK(offsetof(VkClusterAccelerationStructureCommandsInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_CLUSTER_ACCELERATION_STRUCTURE_COMMANDS_INFO_NV);
 }
 
-TEST_CASE("Test case 857") {
+TEST_CASE("Test case 873") {
     VkAccelerationStructureBuildSizesInfoKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_BUILD_SIZES_INFO_KHR();
     CHECK(offsetof(VkAccelerationStructureBuildSizesInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_BUILD_SIZES_INFO_KHR);
 }
 
-TEST_CASE("Test case 858") {
+TEST_CASE("Test case 874") {
     VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV tmp = MAKE_VK_RAY_TRACING_PIPELINE_CLUSTER_ACCELERATION_STRUCTURE_CREATE_INFO_NV();
     CHECK(offsetof(VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_CLUSTER_ACCELERATION_STRUCTURE_CREATE_INFO_NV);
 }
 
-TEST_CASE("Test case 859") {
+TEST_CASE("Test case 875") {
     VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_PARTITIONED_ACCELERATION_STRUCTURE_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PARTITIONED_ACCELERATION_STRUCTURE_FEATURES_NV);
 }
 
-TEST_CASE("Test case 860") {
+TEST_CASE("Test case 876") {
     VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_PARTITIONED_ACCELERATION_STRUCTURE_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PARTITIONED_ACCELERATION_STRUCTURE_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 861") {
+TEST_CASE("Test case 877") {
     VkPartitionedAccelerationStructureFlagsNV tmp = MAKE_VK_PARTITIONED_ACCELERATION_STRUCTURE_FLAGS_NV();
     CHECK(offsetof(VkPartitionedAccelerationStructureFlagsNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PARTITIONED_ACCELERATION_STRUCTURE_FLAGS_NV);
 }
 
-TEST_CASE("Test case 862") {
+TEST_CASE("Test case 878") {
     VkWriteDescriptorSetPartitionedAccelerationStructureNV tmp = MAKE_VK_WRITE_DESCRIPTOR_SET_PARTITIONED_ACCELERATION_STRUCTURE_NV();
     CHECK(offsetof(VkWriteDescriptorSetPartitionedAccelerationStructureNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_PARTITIONED_ACCELERATION_STRUCTURE_NV);
 }
 
-TEST_CASE("Test case 863") {
+TEST_CASE("Test case 879") {
     VkPartitionedAccelerationStructureInstancesInputNV tmp = MAKE_VK_PARTITIONED_ACCELERATION_STRUCTURE_INSTANCES_INPUT_NV();
     CHECK(offsetof(VkPartitionedAccelerationStructureInstancesInputNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PARTITIONED_ACCELERATION_STRUCTURE_INSTANCES_INPUT_NV);
 }
 
-TEST_CASE("Test case 864") {
+TEST_CASE("Test case 880") {
     VkBuildPartitionedAccelerationStructureInfoNV tmp = MAKE_VK_BUILD_PARTITIONED_ACCELERATION_STRUCTURE_INFO_NV();
     CHECK(offsetof(VkBuildPartitionedAccelerationStructureInfoNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_BUILD_PARTITIONED_ACCELERATION_STRUCTURE_INFO_NV);
 }
 
-TEST_CASE("Test case 865") {
+TEST_CASE("Test case 881") {
     VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 866") {
+TEST_CASE("Test case 882") {
     VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_PROPERTIES_EXT);
 }
 
-TEST_CASE("Test case 867") {
+TEST_CASE("Test case 883") {
     VkGeneratedCommandsMemoryRequirementsInfoEXT tmp = MAKE_VK_GENERATED_COMMANDS_MEMORY_REQUIREMENTS_INFO_EXT();
     CHECK(offsetof(VkGeneratedCommandsMemoryRequirementsInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_MEMORY_REQUIREMENTS_INFO_EXT);
 }
 
-TEST_CASE("Test case 868") {
+TEST_CASE("Test case 884") {
     VkIndirectExecutionSetPipelineInfoEXT tmp = MAKE_VK_INDIRECT_EXECUTION_SET_PIPELINE_INFO_EXT();
     CHECK(offsetof(VkIndirectExecutionSetPipelineInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_EXECUTION_SET_PIPELINE_INFO_EXT);
 }
 
-TEST_CASE("Test case 869") {
+TEST_CASE("Test case 885") {
     VkIndirectExecutionSetShaderLayoutInfoEXT tmp = MAKE_VK_INDIRECT_EXECUTION_SET_SHADER_LAYOUT_INFO_EXT();
     CHECK(offsetof(VkIndirectExecutionSetShaderLayoutInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_EXECUTION_SET_SHADER_LAYOUT_INFO_EXT);
 }
 
-TEST_CASE("Test case 870") {
+TEST_CASE("Test case 886") {
     VkIndirectExecutionSetShaderInfoEXT tmp = MAKE_VK_INDIRECT_EXECUTION_SET_SHADER_INFO_EXT();
     CHECK(offsetof(VkIndirectExecutionSetShaderInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_EXECUTION_SET_SHADER_INFO_EXT);
 }
 
-TEST_CASE("Test case 871") {
+TEST_CASE("Test case 887") {
     VkIndirectExecutionSetCreateInfoEXT tmp = MAKE_VK_INDIRECT_EXECUTION_SET_CREATE_INFO_EXT();
     CHECK(offsetof(VkIndirectExecutionSetCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_EXECUTION_SET_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 872") {
+TEST_CASE("Test case 888") {
     VkGeneratedCommandsInfoEXT tmp = MAKE_VK_GENERATED_COMMANDS_INFO_EXT();
     CHECK(offsetof(VkGeneratedCommandsInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_INFO_EXT);
 }
 
-TEST_CASE("Test case 873") {
+TEST_CASE("Test case 889") {
     VkWriteIndirectExecutionSetPipelineEXT tmp = MAKE_VK_WRITE_INDIRECT_EXECUTION_SET_PIPELINE_EXT();
     CHECK(offsetof(VkWriteIndirectExecutionSetPipelineEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_WRITE_INDIRECT_EXECUTION_SET_PIPELINE_EXT);
 }
 
-TEST_CASE("Test case 874") {
+TEST_CASE("Test case 890") {
     VkIndirectCommandsLayoutTokenEXT tmp = MAKE_VK_INDIRECT_COMMANDS_LAYOUT_TOKEN_EXT();
     CHECK(offsetof(VkIndirectCommandsLayoutTokenEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_TOKEN_EXT);
 }
 
-TEST_CASE("Test case 875") {
+TEST_CASE("Test case 891") {
     VkIndirectCommandsLayoutCreateInfoEXT tmp = MAKE_VK_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_EXT();
     CHECK(offsetof(VkIndirectCommandsLayoutCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_INDIRECT_COMMANDS_LAYOUT_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 876") {
+TEST_CASE("Test case 892") {
     VkGeneratedCommandsPipelineInfoEXT tmp = MAKE_VK_GENERATED_COMMANDS_PIPELINE_INFO_EXT();
     CHECK(offsetof(VkGeneratedCommandsPipelineInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_PIPELINE_INFO_EXT);
 }
 
-TEST_CASE("Test case 877") {
+TEST_CASE("Test case 893") {
     VkGeneratedCommandsShaderInfoEXT tmp = MAKE_VK_GENERATED_COMMANDS_SHADER_INFO_EXT();
     CHECK(offsetof(VkGeneratedCommandsShaderInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_GENERATED_COMMANDS_SHADER_INFO_EXT);
 }
 
-TEST_CASE("Test case 878") {
+TEST_CASE("Test case 894") {
     VkWriteIndirectExecutionSetShaderEXT tmp = MAKE_VK_WRITE_INDIRECT_EXECUTION_SET_SHADER_EXT();
     CHECK(offsetof(VkWriteIndirectExecutionSetShaderEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_WRITE_INDIRECT_EXECUTION_SET_SHADER_EXT);
 }
 
-TEST_CASE("Test case 879") {
+TEST_CASE("Test case 895") {
     VkPhysicalDeviceImageAlignmentControlFeaturesMESA tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_ALIGNMENT_CONTROL_FEATURES_MESA();
     CHECK(offsetof(VkPhysicalDeviceImageAlignmentControlFeaturesMESA, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_ALIGNMENT_CONTROL_FEATURES_MESA);
 }
 
-TEST_CASE("Test case 880") {
+TEST_CASE("Test case 896") {
     VkPhysicalDeviceImageAlignmentControlPropertiesMESA tmp = MAKE_VK_PHYSICAL_DEVICE_IMAGE_ALIGNMENT_CONTROL_PROPERTIES_MESA();
     CHECK(offsetof(VkPhysicalDeviceImageAlignmentControlPropertiesMESA, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_IMAGE_ALIGNMENT_CONTROL_PROPERTIES_MESA);
 }
 
-TEST_CASE("Test case 881") {
+TEST_CASE("Test case 897") {
     VkImageAlignmentControlCreateInfoMESA tmp = MAKE_VK_IMAGE_ALIGNMENT_CONTROL_CREATE_INFO_MESA();
     CHECK(offsetof(VkImageAlignmentControlCreateInfoMESA, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_IMAGE_ALIGNMENT_CONTROL_CREATE_INFO_MESA);
 }
 
-TEST_CASE("Test case 882") {
+TEST_CASE("Test case 898") {
     VkPhysicalDeviceDepthClampControlFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_DEPTH_CLAMP_CONTROL_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceDepthClampControlFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEPTH_CLAMP_CONTROL_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 883") {
+TEST_CASE("Test case 899") {
     VkPipelineViewportDepthClampControlCreateInfoEXT tmp = MAKE_VK_PIPELINE_VIEWPORT_DEPTH_CLAMP_CONTROL_CREATE_INFO_EXT();
     CHECK(offsetof(VkPipelineViewportDepthClampControlCreateInfoEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_DEPTH_CLAMP_CONTROL_CREATE_INFO_EXT);
 }
 
-TEST_CASE("Test case 884") {
+TEST_CASE("Test case 900") {
     VkPhysicalDeviceHdrVividFeaturesHUAWEI tmp = MAKE_VK_PHYSICAL_DEVICE_HDR_VIVID_FEATURES_HUAWEI();
     CHECK(offsetof(VkPhysicalDeviceHdrVividFeaturesHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HDR_VIVID_FEATURES_HUAWEI);
 }
 
-TEST_CASE("Test case 885") {
+TEST_CASE("Test case 901") {
     VkHdrVividDynamicMetadataHUAWEI tmp = MAKE_VK_HDR_VIVID_DYNAMIC_METADATA_HUAWEI();
     CHECK(offsetof(VkHdrVividDynamicMetadataHUAWEI, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_HDR_VIVID_DYNAMIC_METADATA_HUAWEI);
 }
 
-TEST_CASE("Test case 886") {
+TEST_CASE("Test case 902") {
     VkCooperativeMatrixFlexibleDimensionsPropertiesNV tmp = MAKE_VK_COOPERATIVE_MATRIX_FLEXIBLE_DIMENSIONS_PROPERTIES_NV();
     CHECK(offsetof(VkCooperativeMatrixFlexibleDimensionsPropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COOPERATIVE_MATRIX_FLEXIBLE_DIMENSIONS_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 887") {
+TEST_CASE("Test case 903") {
     VkPhysicalDeviceCooperativeMatrix2FeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_2_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrix2FeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_2_FEATURES_NV);
 }
 
-TEST_CASE("Test case 888") {
+TEST_CASE("Test case 904") {
     VkPhysicalDeviceCooperativeMatrix2PropertiesNV tmp = MAKE_VK_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_2_PROPERTIES_NV();
     CHECK(offsetof(VkPhysicalDeviceCooperativeMatrix2PropertiesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_2_PROPERTIES_NV);
 }
 
-TEST_CASE("Test case 889") {
+TEST_CASE("Test case 905") {
     VkPhysicalDevicePipelineOpacityMicromapFeaturesARM tmp = MAKE_VK_PHYSICAL_DEVICE_PIPELINE_OPACITY_MICROMAP_FEATURES_ARM();
     CHECK(offsetof(VkPhysicalDevicePipelineOpacityMicromapFeaturesARM, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_OPACITY_MICROMAP_FEATURES_ARM);
 }
 
-TEST_CASE("Test case 890") {
+TEST_CASE("Test case 906") {
     VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 891") {
+TEST_CASE("Test case 907") {
     VkSetPresentConfigNV tmp = MAKE_VK_SET_PRESENT_CONFIG_NV();
     CHECK(offsetof(VkSetPresentConfigNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_SET_PRESENT_CONFIG_NV);
 }
 
-TEST_CASE("Test case 892") {
+TEST_CASE("Test case 908") {
     VkPhysicalDevicePresentMeteringFeaturesNV tmp = MAKE_VK_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV();
     CHECK(offsetof(VkPhysicalDevicePresentMeteringFeaturesNV, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV);
 }
 
-TEST_CASE("Test case 893") {
+TEST_CASE("Test case 909") {
+    VkRenderingEndInfoEXT tmp = MAKE_VK_RENDERING_END_INFO_EXT();
+    CHECK(offsetof(VkRenderingEndInfoEXT, sType) == 0);
+    REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RENDERING_END_INFO_EXT);
+}
+
+TEST_CASE("Test case 910") {
     VkAccelerationStructureGeometryTrianglesDataKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR();
     CHECK(offsetof(VkAccelerationStructureGeometryTrianglesDataKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR);
 }
 
-TEST_CASE("Test case 894") {
+TEST_CASE("Test case 911") {
     VkAccelerationStructureGeometryAabbsDataKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR();
     CHECK(offsetof(VkAccelerationStructureGeometryAabbsDataKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR);
 }
 
-TEST_CASE("Test case 895") {
+TEST_CASE("Test case 912") {
     VkAccelerationStructureGeometryInstancesDataKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR();
     CHECK(offsetof(VkAccelerationStructureGeometryInstancesDataKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR);
 }
 
-TEST_CASE("Test case 896") {
+TEST_CASE("Test case 913") {
     VkAccelerationStructureGeometryKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_KHR();
     CHECK(offsetof(VkAccelerationStructureGeometryKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_KHR);
 }
 
-TEST_CASE("Test case 897") {
+TEST_CASE("Test case 914") {
     VkAccelerationStructureBuildGeometryInfoKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_BUILD_GEOMETRY_INFO_KHR();
     CHECK(offsetof(VkAccelerationStructureBuildGeometryInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_BUILD_GEOMETRY_INFO_KHR);
 }
 
-TEST_CASE("Test case 898") {
+TEST_CASE("Test case 915") {
     VkAccelerationStructureCreateInfoKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_CREATE_INFO_KHR();
     CHECK(offsetof(VkAccelerationStructureCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 899") {
+TEST_CASE("Test case 916") {
     VkWriteDescriptorSetAccelerationStructureKHR tmp = MAKE_VK_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_KHR();
     CHECK(offsetof(VkWriteDescriptorSetAccelerationStructureKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_KHR);
 }
 
-TEST_CASE("Test case 900") {
+TEST_CASE("Test case 917") {
     VkPhysicalDeviceAccelerationStructureFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceAccelerationStructureFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 901") {
+TEST_CASE("Test case 918") {
     VkPhysicalDeviceAccelerationStructurePropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceAccelerationStructurePropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ACCELERATION_STRUCTURE_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 902") {
+TEST_CASE("Test case 919") {
     VkAccelerationStructureDeviceAddressInfoKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_DEVICE_ADDRESS_INFO_KHR();
     CHECK(offsetof(VkAccelerationStructureDeviceAddressInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_DEVICE_ADDRESS_INFO_KHR);
 }
 
-TEST_CASE("Test case 903") {
+TEST_CASE("Test case 920") {
     VkAccelerationStructureVersionInfoKHR tmp = MAKE_VK_ACCELERATION_STRUCTURE_VERSION_INFO_KHR();
     CHECK(offsetof(VkAccelerationStructureVersionInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_VERSION_INFO_KHR);
 }
 
-TEST_CASE("Test case 904") {
+TEST_CASE("Test case 921") {
     VkCopyAccelerationStructureToMemoryInfoKHR tmp = MAKE_VK_COPY_ACCELERATION_STRUCTURE_TO_MEMORY_INFO_KHR();
     CHECK(offsetof(VkCopyAccelerationStructureToMemoryInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_ACCELERATION_STRUCTURE_TO_MEMORY_INFO_KHR);
 }
 
-TEST_CASE("Test case 905") {
+TEST_CASE("Test case 922") {
     VkCopyMemoryToAccelerationStructureInfoKHR tmp = MAKE_VK_COPY_MEMORY_TO_ACCELERATION_STRUCTURE_INFO_KHR();
     CHECK(offsetof(VkCopyMemoryToAccelerationStructureInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_MEMORY_TO_ACCELERATION_STRUCTURE_INFO_KHR);
 }
 
-TEST_CASE("Test case 906") {
+TEST_CASE("Test case 923") {
     VkCopyAccelerationStructureInfoKHR tmp = MAKE_VK_COPY_ACCELERATION_STRUCTURE_INFO_KHR();
     CHECK(offsetof(VkCopyAccelerationStructureInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_COPY_ACCELERATION_STRUCTURE_INFO_KHR);
 }
 
-TEST_CASE("Test case 907") {
+TEST_CASE("Test case 924") {
     VkRayTracingShaderGroupCreateInfoKHR tmp = MAKE_VK_RAY_TRACING_SHADER_GROUP_CREATE_INFO_KHR();
     CHECK(offsetof(VkRayTracingShaderGroupCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_SHADER_GROUP_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 908") {
+TEST_CASE("Test case 925") {
     VkRayTracingPipelineInterfaceCreateInfoKHR tmp = MAKE_VK_RAY_TRACING_PIPELINE_INTERFACE_CREATE_INFO_KHR();
     CHECK(offsetof(VkRayTracingPipelineInterfaceCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_INTERFACE_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 909") {
+TEST_CASE("Test case 926") {
     VkRayTracingPipelineCreateInfoKHR tmp = MAKE_VK_RAY_TRACING_PIPELINE_CREATE_INFO_KHR();
     CHECK(offsetof(VkRayTracingPipelineCreateInfoKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_RAY_TRACING_PIPELINE_CREATE_INFO_KHR);
 }
 
-TEST_CASE("Test case 910") {
+TEST_CASE("Test case 927") {
     VkPhysicalDeviceRayTracingPipelineFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceRayTracingPipelineFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 911") {
+TEST_CASE("Test case 928") {
     VkPhysicalDeviceRayTracingPipelinePropertiesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_PROPERTIES_KHR();
     CHECK(offsetof(VkPhysicalDeviceRayTracingPipelinePropertiesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_TRACING_PIPELINE_PROPERTIES_KHR);
 }
 
-TEST_CASE("Test case 912") {
+TEST_CASE("Test case 929") {
     VkPhysicalDeviceRayQueryFeaturesKHR tmp = MAKE_VK_PHYSICAL_DEVICE_RAY_QUERY_FEATURES_KHR();
     CHECK(offsetof(VkPhysicalDeviceRayQueryFeaturesKHR, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAY_QUERY_FEATURES_KHR);
 }
 
-TEST_CASE("Test case 913") {
+TEST_CASE("Test case 930") {
     VkPhysicalDeviceMeshShaderFeaturesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MESH_SHADER_FEATURES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMeshShaderFeaturesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_FEATURES_EXT);
 }
 
-TEST_CASE("Test case 914") {
+TEST_CASE("Test case 931") {
     VkPhysicalDeviceMeshShaderPropertiesEXT tmp = MAKE_VK_PHYSICAL_DEVICE_MESH_SHADER_PROPERTIES_EXT();
     CHECK(offsetof(VkPhysicalDeviceMeshShaderPropertiesEXT, sType) == 0);
     REQUIRE(tmp.sType == VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MESH_SHADER_PROPERTIES_EXT);

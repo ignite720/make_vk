@@ -1,9 +1,9 @@
 #ifndef MAKE_VK_H__
 #define MAKE_VK_H__ 1
 
-// Entries: 916
+// Entries: 933
 #define MAKE_VK_CPP20 202002L
-#define MAKE_VK_VERSION "1.4.309.0"
+#define MAKE_VK_VERSION "1.4.313.0"
 
 #include <vulkan/vulkan.h>
 
@@ -362,6 +362,7 @@
 #define MAKE_VK_DISPLAY_MODE_PROPERTIES_2_KHR()                                                                   (VkDisplayModeProperties2KHR) { .sType = VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_INFO_2_KHR()                                                                        (VkDisplayPlaneInfo2KHR) { .sType = VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_CAPABILITIES_2_KHR()                                                                (VkDisplayPlaneCapabilities2KHR) { .sType = VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR }
+#define MAKE_VK_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR()                                                    (VkPhysicalDeviceShaderBfloat16FeaturesKHR) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR()                                                       (VkPhysicalDeviceShaderClockFeaturesKHR) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_PROFILE_INFO_KHR()                                                              (VkVideoDecodeH265ProfileInfoKHR) { .sType = VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_PROFILE_INFO_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_CAPABILITIES_KHR()                                                              (VkVideoDecodeH265CapabilitiesKHR) { .sType = VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_CAPABILITIES_KHR }
@@ -655,6 +656,12 @@
 #define MAKE_VK_CUDA_LAUNCH_INFO_NV()                                                                             (VkCudaLaunchInfoNV) { .sType = VK_STRUCTURE_TYPE_CUDA_LAUNCH_INFO_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV()                                                  (VkPhysicalDeviceCudaKernelLaunchFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV()                                                (VkPhysicalDeviceCudaKernelLaunchPropertiesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM()                                                      (VkPhysicalDeviceTileShadingFeaturesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM()                                                    (VkPhysicalDeviceTileShadingPropertiesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM }
+#define MAKE_VK_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM()                                                       (VkRenderPassTileShadingCreateInfoQCOM) { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM }
+#define MAKE_VK_PER_TILE_BEGIN_INFO_QCOM()                                                                        (VkPerTileBeginInfoQCOM) { .sType = VK_STRUCTURE_TYPE_PER_TILE_BEGIN_INFO_QCOM }
+#define MAKE_VK_PER_TILE_END_INFO_QCOM()                                                                          (VkPerTileEndInfoQCOM) { .sType = VK_STRUCTURE_TYPE_PER_TILE_END_INFO_QCOM }
+#define MAKE_VK_DISPATCH_TILE_INFO_QCOM()                                                                         (VkDispatchTileInfoQCOM) { .sType = VK_STRUCTURE_TYPE_DISPATCH_TILE_INFO_QCOM }
 #define MAKE_VK_QUERY_LOW_LATENCY_SUPPORT_NV()                                                                    (VkQueryLowLatencySupportNV) { .sType = VK_STRUCTURE_TYPE_QUERY_LOW_LATENCY_SUPPORT_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT()                                                (VkPhysicalDeviceDescriptorBufferPropertiesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT()                                    (VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT }
@@ -760,9 +767,9 @@
 #define MAKE_VK_RENDER_PASS_STRIPE_INFO_ARM()                                                                     (VkRenderPassStripeInfoARM) { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_BEGIN_INFO_ARM()                                                               (VkRenderPassStripeBeginInfoARM) { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_BEGIN_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM()                                                              (VkRenderPassStripeSubmitInfoARM) { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM()                                       (VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM()                                     (VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM }
-#define MAKE_VK_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM()                                               (VkSubpassFragmentDensityMapOffsetEndInfoQCOM) { .sType = VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT()                                        (VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT()                                      (VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT }
+#define MAKE_VK_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT()                                            (VkRenderPassFragmentDensityMapOffsetEndInfoEXT) { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV()                                                (VkPhysicalDeviceCopyMemoryIndirectFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV()                                              (VkPhysicalDeviceCopyMemoryIndirectPropertiesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV()                                                (VkPhysicalDeviceMemoryDecompressionFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV }
@@ -851,9 +858,18 @@
 #define MAKE_VK_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT()                             (VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT()                                                  (VkPhysicalDeviceLayeredDriverPropertiesMSFT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV()                                      (VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM()                                                  (VkPhysicalDeviceTileMemoryHeapFeaturesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM()                                                (VkPhysicalDeviceTileMemoryHeapPropertiesQCOM) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM }
+#define MAKE_VK_TILE_MEMORY_REQUIREMENTS_QCOM()                                                                   (VkTileMemoryRequirementsQCOM) { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_REQUIREMENTS_QCOM }
+#define MAKE_VK_TILE_MEMORY_BIND_INFO_QCOM()                                                                      (VkTileMemoryBindInfoQCOM) { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_BIND_INFO_QCOM }
+#define MAKE_VK_TILE_MEMORY_SIZE_INFO_QCOM()                                                                      (VkTileMemorySizeInfoQCOM) { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_SIZE_INFO_QCOM }
 #define MAKE_VK_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV()                                                           (VkDisplaySurfaceStereoCreateInfoNV) { .sType = VK_STRUCTURE_TYPE_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV }
 #define MAKE_VK_DISPLAY_MODE_STEREO_PROPERTIES_NV()                                                               (VkDisplayModeStereoPropertiesNV) { .sType = VK_STRUCTURE_TYPE_DISPLAY_MODE_STEREO_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV()                                                   (VkPhysicalDeviceRawAccessChainsFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV()                                                    (VkExternalComputeQueueDeviceCreateInfoNV) { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV()                                                           (VkExternalComputeQueueCreateInfoNV) { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV()                                                           (VkExternalComputeQueueDataParamsNV) { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV()                                            (VkPhysicalDeviceExternalComputeQueuePropertiesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV()                                          (VkPhysicalDeviceCommandBufferInheritanceFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV()                                        (VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT()                                       (VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT }
@@ -901,6 +917,7 @@
 #define MAKE_VK_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT()                                        (VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT }
 #define MAKE_VK_SET_PRESENT_CONFIG_NV()                                                                           (VkSetPresentConfigNV) { .sType = VK_STRUCTURE_TYPE_SET_PRESENT_CONFIG_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV()                                                    (VkPhysicalDevicePresentMeteringFeaturesNV) { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV }
+#define MAKE_VK_RENDERING_END_INFO_EXT()                                                                          (VkRenderingEndInfoEXT) { .sType = VK_STRUCTURE_TYPE_RENDERING_END_INFO_EXT }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR()                                              (VkAccelerationStructureGeometryTrianglesDataKHR) { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR()                                                  (VkAccelerationStructureGeometryAabbsDataKHR) { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR()                                              (VkAccelerationStructureGeometryInstancesDataKHR) { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR }
@@ -1281,6 +1298,7 @@
 #define MAKE_VK_DISPLAY_MODE_PROPERTIES_2_KHR()                                                                   VkDisplayModeProperties2KHR { .sType = VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_INFO_2_KHR()                                                                        VkDisplayPlaneInfo2KHR { .sType = VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_CAPABILITIES_2_KHR()                                                                VkDisplayPlaneCapabilities2KHR { .sType = VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR }
+#define MAKE_VK_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR()                                                    VkPhysicalDeviceShaderBfloat16FeaturesKHR { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR()                                                       VkPhysicalDeviceShaderClockFeaturesKHR { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_PROFILE_INFO_KHR()                                                              VkVideoDecodeH265ProfileInfoKHR { .sType = VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_PROFILE_INFO_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_CAPABILITIES_KHR()                                                              VkVideoDecodeH265CapabilitiesKHR { .sType = VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_CAPABILITIES_KHR }
@@ -1574,6 +1592,12 @@
 #define MAKE_VK_CUDA_LAUNCH_INFO_NV()                                                                             VkCudaLaunchInfoNV { .sType = VK_STRUCTURE_TYPE_CUDA_LAUNCH_INFO_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV()                                                  VkPhysicalDeviceCudaKernelLaunchFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV()                                                VkPhysicalDeviceCudaKernelLaunchPropertiesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM()                                                      VkPhysicalDeviceTileShadingFeaturesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM()                                                    VkPhysicalDeviceTileShadingPropertiesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM }
+#define MAKE_VK_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM()                                                       VkRenderPassTileShadingCreateInfoQCOM { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM }
+#define MAKE_VK_PER_TILE_BEGIN_INFO_QCOM()                                                                        VkPerTileBeginInfoQCOM { .sType = VK_STRUCTURE_TYPE_PER_TILE_BEGIN_INFO_QCOM }
+#define MAKE_VK_PER_TILE_END_INFO_QCOM()                                                                          VkPerTileEndInfoQCOM { .sType = VK_STRUCTURE_TYPE_PER_TILE_END_INFO_QCOM }
+#define MAKE_VK_DISPATCH_TILE_INFO_QCOM()                                                                         VkDispatchTileInfoQCOM { .sType = VK_STRUCTURE_TYPE_DISPATCH_TILE_INFO_QCOM }
 #define MAKE_VK_QUERY_LOW_LATENCY_SUPPORT_NV()                                                                    VkQueryLowLatencySupportNV { .sType = VK_STRUCTURE_TYPE_QUERY_LOW_LATENCY_SUPPORT_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT()                                                VkPhysicalDeviceDescriptorBufferPropertiesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT()                                    VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT }
@@ -1679,9 +1703,9 @@
 #define MAKE_VK_RENDER_PASS_STRIPE_INFO_ARM()                                                                     VkRenderPassStripeInfoARM { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_BEGIN_INFO_ARM()                                                               VkRenderPassStripeBeginInfoARM { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_BEGIN_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM()                                                              VkRenderPassStripeSubmitInfoARM { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM()                                       VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM()                                     VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM }
-#define MAKE_VK_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM()                                               VkSubpassFragmentDensityMapOffsetEndInfoQCOM { .sType = VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT()                                        VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT()                                      VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT }
+#define MAKE_VK_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT()                                            VkRenderPassFragmentDensityMapOffsetEndInfoEXT { .sType = VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV()                                                VkPhysicalDeviceCopyMemoryIndirectFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV()                                              VkPhysicalDeviceCopyMemoryIndirectPropertiesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV()                                                VkPhysicalDeviceMemoryDecompressionFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV }
@@ -1770,9 +1794,18 @@
 #define MAKE_VK_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT()                             VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT()                                                  VkPhysicalDeviceLayeredDriverPropertiesMSFT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV()                                      VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM()                                                  VkPhysicalDeviceTileMemoryHeapFeaturesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM()                                                VkPhysicalDeviceTileMemoryHeapPropertiesQCOM { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM }
+#define MAKE_VK_TILE_MEMORY_REQUIREMENTS_QCOM()                                                                   VkTileMemoryRequirementsQCOM { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_REQUIREMENTS_QCOM }
+#define MAKE_VK_TILE_MEMORY_BIND_INFO_QCOM()                                                                      VkTileMemoryBindInfoQCOM { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_BIND_INFO_QCOM }
+#define MAKE_VK_TILE_MEMORY_SIZE_INFO_QCOM()                                                                      VkTileMemorySizeInfoQCOM { .sType = VK_STRUCTURE_TYPE_TILE_MEMORY_SIZE_INFO_QCOM }
 #define MAKE_VK_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV()                                                           VkDisplaySurfaceStereoCreateInfoNV { .sType = VK_STRUCTURE_TYPE_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV }
 #define MAKE_VK_DISPLAY_MODE_STEREO_PROPERTIES_NV()                                                               VkDisplayModeStereoPropertiesNV { .sType = VK_STRUCTURE_TYPE_DISPLAY_MODE_STEREO_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV()                                                   VkPhysicalDeviceRawAccessChainsFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV()                                                    VkExternalComputeQueueDeviceCreateInfoNV { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV()                                                           VkExternalComputeQueueCreateInfoNV { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV()                                                           VkExternalComputeQueueDataParamsNV { .sType = VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV()                                            VkPhysicalDeviceExternalComputeQueuePropertiesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV()                                          VkPhysicalDeviceCommandBufferInheritanceFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV()                                        VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT()                                       VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT }
@@ -1820,6 +1853,7 @@
 #define MAKE_VK_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT()                                        VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT }
 #define MAKE_VK_SET_PRESENT_CONFIG_NV()                                                                           VkSetPresentConfigNV { .sType = VK_STRUCTURE_TYPE_SET_PRESENT_CONFIG_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV()                                                    VkPhysicalDevicePresentMeteringFeaturesNV { .sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV }
+#define MAKE_VK_RENDERING_END_INFO_EXT()                                                                          VkRenderingEndInfoEXT { .sType = VK_STRUCTURE_TYPE_RENDERING_END_INFO_EXT }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR()                                              VkAccelerationStructureGeometryTrianglesDataKHR { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR()                                                  VkAccelerationStructureGeometryAabbsDataKHR { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR()                                              VkAccelerationStructureGeometryInstancesDataKHR { .sType = VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR }
@@ -2198,6 +2232,7 @@
 #define MAKE_VK_DISPLAY_MODE_PROPERTIES_2_KHR()                                                                   VkDisplayModeProperties2KHR { VK_STRUCTURE_TYPE_DISPLAY_MODE_PROPERTIES_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_INFO_2_KHR()                                                                        VkDisplayPlaneInfo2KHR { VK_STRUCTURE_TYPE_DISPLAY_PLANE_INFO_2_KHR }
 #define MAKE_VK_DISPLAY_PLANE_CAPABILITIES_2_KHR()                                                                VkDisplayPlaneCapabilities2KHR { VK_STRUCTURE_TYPE_DISPLAY_PLANE_CAPABILITIES_2_KHR }
+#define MAKE_VK_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR()                                                    VkPhysicalDeviceShaderBfloat16FeaturesKHR { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_BFLOAT16_FEATURES_KHR }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR()                                                       VkPhysicalDeviceShaderClockFeaturesKHR { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_CLOCK_FEATURES_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_PROFILE_INFO_KHR()                                                              VkVideoDecodeH265ProfileInfoKHR { VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_PROFILE_INFO_KHR }
 #define MAKE_VK_VIDEO_DECODE_H265_CAPABILITIES_KHR()                                                              VkVideoDecodeH265CapabilitiesKHR { VK_STRUCTURE_TYPE_VIDEO_DECODE_H265_CAPABILITIES_KHR }
@@ -2491,6 +2526,12 @@
 #define MAKE_VK_CUDA_LAUNCH_INFO_NV()                                                                             VkCudaLaunchInfoNV { VK_STRUCTURE_TYPE_CUDA_LAUNCH_INFO_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV()                                                  VkPhysicalDeviceCudaKernelLaunchFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV()                                                VkPhysicalDeviceCudaKernelLaunchPropertiesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_CUDA_KERNEL_LAUNCH_PROPERTIES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM()                                                      VkPhysicalDeviceTileShadingFeaturesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM()                                                    VkPhysicalDeviceTileShadingPropertiesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_SHADING_PROPERTIES_QCOM }
+#define MAKE_VK_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM()                                                       VkRenderPassTileShadingCreateInfoQCOM { VK_STRUCTURE_TYPE_RENDER_PASS_TILE_SHADING_CREATE_INFO_QCOM }
+#define MAKE_VK_PER_TILE_BEGIN_INFO_QCOM()                                                                        VkPerTileBeginInfoQCOM { VK_STRUCTURE_TYPE_PER_TILE_BEGIN_INFO_QCOM }
+#define MAKE_VK_PER_TILE_END_INFO_QCOM()                                                                          VkPerTileEndInfoQCOM { VK_STRUCTURE_TYPE_PER_TILE_END_INFO_QCOM }
+#define MAKE_VK_DISPATCH_TILE_INFO_QCOM()                                                                         VkDispatchTileInfoQCOM { VK_STRUCTURE_TYPE_DISPATCH_TILE_INFO_QCOM }
 #define MAKE_VK_QUERY_LOW_LATENCY_SUPPORT_NV()                                                                    VkQueryLowLatencySupportNV { VK_STRUCTURE_TYPE_QUERY_LOW_LATENCY_SUPPORT_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT()                                                VkPhysicalDeviceDescriptorBufferPropertiesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_PROPERTIES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT()                                    VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_BUFFER_DENSITY_MAP_PROPERTIES_EXT }
@@ -2596,9 +2637,9 @@
 #define MAKE_VK_RENDER_PASS_STRIPE_INFO_ARM()                                                                     VkRenderPassStripeInfoARM { VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_BEGIN_INFO_ARM()                                                               VkRenderPassStripeBeginInfoARM { VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_BEGIN_INFO_ARM }
 #define MAKE_VK_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM()                                                              VkRenderPassStripeSubmitInfoARM { VK_STRUCTURE_TYPE_RENDER_PASS_STRIPE_SUBMIT_INFO_ARM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM()                                       VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM }
-#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM()                                     VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM }
-#define MAKE_VK_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM()                                               VkSubpassFragmentDensityMapOffsetEndInfoQCOM { VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT()                                        VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_EXT }
+#define MAKE_VK_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT()                                      VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_EXT }
+#define MAKE_VK_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT()                                            VkRenderPassFragmentDensityMapOffsetEndInfoEXT { VK_STRUCTURE_TYPE_RENDER_PASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV()                                                VkPhysicalDeviceCopyMemoryIndirectFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV()                                              VkPhysicalDeviceCopyMemoryIndirectPropertiesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COPY_MEMORY_INDIRECT_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV()                                                VkPhysicalDeviceMemoryDecompressionFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_DECOMPRESSION_FEATURES_NV }
@@ -2687,9 +2728,18 @@
 #define MAKE_VK_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT()                             VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_DYNAMIC_STATE_FEATURES_EXT }
 #define MAKE_VK_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT()                                                  VkPhysicalDeviceLayeredDriverPropertiesMSFT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_LAYERED_DRIVER_PROPERTIES_MSFT }
 #define MAKE_VK_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV()                                      VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DESCRIPTOR_POOL_OVERALLOCATION_FEATURES_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM()                                                  VkPhysicalDeviceTileMemoryHeapFeaturesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_FEATURES_QCOM }
+#define MAKE_VK_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM()                                                VkPhysicalDeviceTileMemoryHeapPropertiesQCOM { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_TILE_MEMORY_HEAP_PROPERTIES_QCOM }
+#define MAKE_VK_TILE_MEMORY_REQUIREMENTS_QCOM()                                                                   VkTileMemoryRequirementsQCOM { VK_STRUCTURE_TYPE_TILE_MEMORY_REQUIREMENTS_QCOM }
+#define MAKE_VK_TILE_MEMORY_BIND_INFO_QCOM()                                                                      VkTileMemoryBindInfoQCOM { VK_STRUCTURE_TYPE_TILE_MEMORY_BIND_INFO_QCOM }
+#define MAKE_VK_TILE_MEMORY_SIZE_INFO_QCOM()                                                                      VkTileMemorySizeInfoQCOM { VK_STRUCTURE_TYPE_TILE_MEMORY_SIZE_INFO_QCOM }
 #define MAKE_VK_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV()                                                           VkDisplaySurfaceStereoCreateInfoNV { VK_STRUCTURE_TYPE_DISPLAY_SURFACE_STEREO_CREATE_INFO_NV }
 #define MAKE_VK_DISPLAY_MODE_STEREO_PROPERTIES_NV()                                                               VkDisplayModeStereoPropertiesNV { VK_STRUCTURE_TYPE_DISPLAY_MODE_STEREO_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV()                                                   VkPhysicalDeviceRawAccessChainsFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_RAW_ACCESS_CHAINS_FEATURES_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV()                                                    VkExternalComputeQueueDeviceCreateInfoNV { VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DEVICE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV()                                                           VkExternalComputeQueueCreateInfoNV { VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_CREATE_INFO_NV }
+#define MAKE_VK_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV()                                                           VkExternalComputeQueueDataParamsNV { VK_STRUCTURE_TYPE_EXTERNAL_COMPUTE_QUEUE_DATA_PARAMS_NV }
+#define MAKE_VK_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV()                                            VkPhysicalDeviceExternalComputeQueuePropertiesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_COMPUTE_QUEUE_PROPERTIES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV()                                          VkPhysicalDeviceCommandBufferInheritanceFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COMMAND_BUFFER_INHERITANCE_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV()                                        VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_ATOMIC_FLOAT16_VECTOR_FEATURES_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT()                                       VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SHADER_REPLICATED_COMPOSITES_FEATURES_EXT }
@@ -2737,6 +2787,7 @@
 #define MAKE_VK_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT()                                        VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_ROBUSTNESS_FEATURES_EXT }
 #define MAKE_VK_SET_PRESENT_CONFIG_NV()                                                                           VkSetPresentConfigNV { VK_STRUCTURE_TYPE_SET_PRESENT_CONFIG_NV }
 #define MAKE_VK_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV()                                                    VkPhysicalDevicePresentMeteringFeaturesNV { VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PRESENT_METERING_FEATURES_NV }
+#define MAKE_VK_RENDERING_END_INFO_EXT()                                                                          VkRenderingEndInfoEXT { VK_STRUCTURE_TYPE_RENDERING_END_INFO_EXT }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR()                                              VkAccelerationStructureGeometryTrianglesDataKHR { VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_TRIANGLES_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR()                                                  VkAccelerationStructureGeometryAabbsDataKHR { VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_AABBS_DATA_KHR }
 #define MAKE_VK_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR()                                              VkAccelerationStructureGeometryInstancesDataKHR { VK_STRUCTURE_TYPE_ACCELERATION_STRUCTURE_GEOMETRY_INSTANCES_DATA_KHR }
