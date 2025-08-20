@@ -1,0 +1,79 @@
+name: CI linux
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+    tags:
+      - "v*"
+  pull_request:
+    branches: [ "main", "master" ]
+    
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Set environment variables
+        run: |
+          echo "REPO_NAME1=${GITHUB_REPOSITORY#$GITHUB_REPOSITORY_OWNER/}" >> $GITHUB_ENV
+
+      - name: Set environment variables
+        run: |
+          echo "ARTIFACT_FILENAME1=${REPO_NAME1}-${{ github.ref_name }}.tar.gz" >> $GITHUB_ENV
+          echo "ARTIFACT_DIR=temp/artifact/${REPO_NAME1}-${{ github.ref_name }}" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref }}
+          submodules: "recursive"
+
+      - name: Read version file
+        id: version
+        run: echo "VK_VERSION=$(cat VK_VERSION | tr -d \"\n\")" >> $GITHUB_OUTPUT
+
+      - name: Install Vulkan SDK
+        uses: humbletim/install-vulkan-sdk@v1.2
+        with:
+          version: ${{ steps.version.outputs.VK_VERSION }}
+          cache: true
+
+      - name: Build
+        run: |
+          make install ARGV="-DMAKE_VK_USE_CATCH2=ON"
+
+      - name: Apply automatic changes
+        if: github.ref_type == 'branch'
+        uses: stefanzweifel/git-auto-commit-action@v5
+
+      - name: Create artifact
+        run: |
+          mkdir -p ${ARTIFACT_DIR} && cp -rv build/install2/* ${ARTIFACT_DIR}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Release-Artifact
+          path: ${{ github.workspace }}/temp
+
+      - name: Package Artifacts
+        if: github.ref_type == 'tag'
+        run: |
+          REPO_NAME2=$(echo ${{ github.repository }} | awk -F/ '{print $2}')
+          ARTIFACT_FILENAME2=${REPO_NAME2}-${{ github.ref_name }}.tar.gz
+          echo "${REPO_NAME1}|${REPO_NAME2}, ${ARTIFACT_FILENAME1}|${ARTIFACT_FILENAME2}"
+
+          tar -czvf ${ARTIFACT_FILENAME2} -C "$(dirname "${ARTIFACT_DIR}")" "$(basename "${ARTIFACT_DIR}")"
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            ${{ env.ARTIFACT_FILENAME1 }}

@@ -1,0 +1,5 @@
+/build*
+/Testing
+/VULKAN_SDK
+
+/vulkan_sdk.tar.gz
