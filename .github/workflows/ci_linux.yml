@@ -41,7 +41,7 @@ jobs:
       - name: Get tag message
         id: tag
         run: |
-          TAG_MESSAGE2=$(git tag -l --format='%(refname:short)%0a%(contents)' ${GITHUB_REF#refs/tags/}*)
+          TAG_MESSAGE2=$(git tag -l --format='%(refname:short)%0a%(contents)' ${GITHUB_REF#refs/tags/}* | head -n 1)
           echo "TAG_MESSAGE=${TAG_MESSAGE2}" >> $GITHUB_OUTPUT
 
       - name: Install Vulkan SDK
