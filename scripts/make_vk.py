@@ -57,14 +57,14 @@ def generate_output(is_cpp: bool, is_cpp_20: bool):
                 prev_line = lines[i-1]
                 struct_name = extract_struct_name(prev_line)
                 struct_name_snake_case = camel_to_snake_upper(struct_name)
-                struct_name_snake_case_vk_type = f"VK_STRUCTURE_TYPE_{struct_name_snake_case[3:]}"                
-                struct_name_snake_case_with_parenthesis = f"{struct_name_snake_case}()"
+                struct_name_snake_case_vk_type = f"VK_STRUCTURE_TYPE_{struct_name_snake_case[3:]}"
+                struct_name_snake_case_with_parenthesis = f"{struct_name_snake_case}(...)"
                 
                 struct_name_for_fmt = f"{struct_name}" if is_cpp else f"({struct_name})"
-                output_line = f"#define MAKE_{struct_name_snake_case_with_parenthesis.ljust(STRUCT_NAME_WITH_PARENTHESIS_MAX_LEN)} {struct_name_for_fmt} {{ {struct_field_s_type}{struct_name_snake_case_vk_type} }}"
+                output_line = f"#define MAKE_{struct_name_snake_case_with_parenthesis.ljust(STRUCT_NAME_WITH_PARENTHESIS_MAX_LEN)} {struct_name_for_fmt} {{ {struct_field_s_type}{struct_name_snake_case_vk_type}, __VA_ARGS__ }}"
                 output_lines.append(output_line)
 
-                test_line = f"{struct_name} tmp = MAKE_{struct_name_snake_case_with_parenthesis};\n"
+                test_line = f"{struct_name} tmp = MAKE_{struct_name_snake_case}();\n"
                 test_line += f"    CHECK(offsetof({struct_name}, sType) == 0);\n"
                 test_line += f"    REQUIRE(tmp.sType == {struct_name_snake_case_vk_type});"
                 output_lines_for_test.append(test_line)
